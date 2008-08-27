@@ -1,0 +1,9 @@
+<h1>ユーザ一覧</h1>
+
+<table>
+<% for user in @users %>
+  <tr>
+    <td><%= link_to user.nickname, user %></td>
+  </tr>
+<% end %>
+</table>

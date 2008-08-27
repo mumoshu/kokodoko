@@ -1,0 +1,20 @@
+<h1>Editing user</h1>
+
+<% form_for(@user) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :identity_url %><br />
+    <%= f.text_field :identity_url %>
+  </p>
+  <p>
+    <%= f.label :nickname %><br />
+    <%= f.text_field :nickname %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @user %> |
+<%= link_to 'Back', users_path %>

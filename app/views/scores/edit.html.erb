@@ -1,0 +1,24 @@
+<h1>Editing score</h1>
+
+<% form_for(@score) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :quiz_id %><br />
+    <%= f.text_field :quiz_id %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :score %><br />
+    <%= f.text_field :score %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @score %> |
+<%= link_to 'Back', scores_path %>

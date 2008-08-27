@@ -1,0 +1,20 @@
+<%= render :partial => 'edit_map', :object => @mark %>
+
+<p>
+  <b>Lat:</b>
+  <%=h @mark.lat %>
+</p>
+
+<p>
+  <b>Lng:</b>
+  <%=h @mark.lng %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @mark.title %>
+</p>
+
+
+<%= link_to 'Edit', edit_quiz_mark_path(@quiz,@mark) %> |
+<%= link_to 'Back', quiz_marks_path %>

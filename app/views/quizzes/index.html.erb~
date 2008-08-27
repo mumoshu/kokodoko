@@ -1,0 +1,19 @@
+<% content_for :title do %>
+ここどこクイズ
+<% end %>
+
+<%= render :partial => "header" %>
+
+<h2>投稿クイズ</h2>
+
+<table>
+<% for quiz in @quizzes %>
+  <tr>
+    <th><%= link_to quiz.title, quiz %></th>
+    <td>(<%=h quiz.user.nickname %>さん)</td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

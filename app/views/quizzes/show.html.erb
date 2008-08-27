@@ -1,0 +1,79 @@
+<% content_for(:title) do %>
+<%=h @quiz.title %>
+<% end %>
+
+<% content_for(:header) do %>
+
+  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAFWWhd6xu7eDT15nkp1sQQxQ2ZspTbS5XvquBQmPB_A0jTVxSphTj4c2GeTMxKQOZQ-0bRpDwUaiQaQ"
+      type="text/javascript"></script>
+
+  <style type="text/css">
+    #map {
+      border : 1px solid #979797;
+      width : 100%;
+      height : 575px;
+    }
+  </style>
+
+  <%= javascript_include_tag "kokodoko" %>
+
+  <script type="text/javascript">
+    //<![CDATA[
+
+    var ary = new Array();
+    <% for m in @marks.entries %>
+    ary.push(
+    {
+      title: "<%= m.title %>",
+      latlng: new GLatLng(<%= m.lat %>,<%= m.lng %>),
+      scale: { magnify: <%= m.magnify_scale || @quiz.magnify_scale %>, normal: 16, demagnify: 15 }
+    }
+    );
+    <% end %>
+
+    shuffle(ary);
+
+    quiz.questions = ary;
+    quiz.num_questions = <%= @quiz.num_questions %>;
+    quiz.view_type = "<%= @quiz.view_type %>";
+
+    //]]>
+  </script>
+
+<% end %>
+
+  <H2><%=h @quiz.title %></h2>
+  <div id="quiz">
+      <div id="pano" style="width: 500px; height: 300px"></div>
+      <div id="map" style="width: 500px; height: 300px"></div>
+      <div id="ansmap" style="width: 500px; height: 300px"></div>
+      <div id="hint" style="width: 500px; height: 300px"></div>
+  </div>
+  <input id="answer" type="text" onfocus="this.select()"></input>
+  <input type="button" onclick="quiz.test()" value="答え合わせ"></input>
+  <% if @quiz.view_type == "satellite" %>
+  <input type="button" onclick="quiz.demagnify()" value="広域"></input>
+  <input type="button" onclick="quiz.normal_scale()" value="通常"></input>
+  <input type="button" onclick="quiz.magnify()" value="詳細"></input>
+  <input type="button" onclick="quiz.show_hint()" value="ヒント"></input>
+  <% end %>
+  <input type="button" onclick="quiz.give_up()" value="ギブアップ"></input>
+  <br/>
+  <div id="point"></div> // 加算点
+  <div id="total"></div> // 合計点
+  <div id="message"></div> // メッセージ
+  <div id="rate"></div> //正答率
+  <div id="q_rest"></div>
+  <% @score = Score.new; @score.user = session[:user_id]; @score.quiz = @quiz %>
+  <div style="display:none">
+  <% form_for @score do |f| %>
+  <%= f.text_field :score %>
+  <%= f.text_field :user_id %>
+  <%= f.text_field :quiz_id %>
+  <%= f.submit "Send" %>
+  <% end %>
+  </div>
+
+<%= link_to 'Edit', edit_quiz_path(@quiz) %> |
+<%= link_to 'Back', quizzes_path %> |
+<%= link_to 'Marks', quiz_marks_path(@quiz) %>

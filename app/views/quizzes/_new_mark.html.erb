@@ -1,0 +1,19 @@
+<% remote_form_for([@quiz,@mark]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :lat %><br />
+    <%= f.text_field :lat %>
+  </p>
+  <p>
+    <%= f.label :lng %><br />
+    <%= f.text_field :lng %>
+  </p>
+  <p>
+    <%= f.label "タイトル" %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.submit "追加" %>
+  </p>
+<% end %>

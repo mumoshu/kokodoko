@@ -1,0 +1,23 @@
+<h1>新しいクイズ</h1>
+
+<% form_for(@quiz) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label "クイズ名" %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label "選択肢の数" %><br />
+    <%= f.text_field :num_choices %>
+  </p>
+  <p>
+    <%= f.label "問題数" %><br />
+    <%= f.text_field :num_questions %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', quizzes_path %>

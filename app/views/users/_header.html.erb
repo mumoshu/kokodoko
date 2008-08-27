@@ -1,0 +1,9 @@
+<table height="34" cellpadding="4" style="color:#666">
+<tr>
+<% if session[:user_id] %>
+<td>ようこそ <strong><%= link_to session[:user_id].nickname, session[:user_id] %></strong> さん</td>
+<% else %>
+<td><%= link_to "OpenIDでログイン", :controller => "login", :action => "login" %>すると、クイズを投稿したり、得点ランキングに参加することができます。</td>
+<% end %>
+</tr>
+</table>

@@ -1,0 +1,26 @@
+<h1>Editing mark</h1>
+
+<% form_for([@quiz,@mark]) do |f| %>
+  <%= f.error_messages %>
+
+  <%= render :partial => 'edit_map', :object => @mark %>
+
+  <p>
+    <%= f.label :lat %><br />
+    <%= f.text_field :lat %>
+  </p>
+  <p>
+    <%= f.label :lng %><br />
+    <%= f.text_field :lng %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', [@quiz,@mark] %> |
+<%= link_to 'Back', quiz_marks_path %>

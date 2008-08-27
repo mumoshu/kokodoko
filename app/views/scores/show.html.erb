@@ -1,0 +1,8 @@
+<%= @score.user.nickname %> さんの <%= @score.quiz.title %> の点数は <%= @score.score %> 点でした。
+
+<div id="footer">
+<%= link_to "再挑戦", @score.quiz %> |
+<%= link_to "#{@score.user.nickname} さんの得点をみる", user_scores_path(@score.user) %> |
+<%= link_to "#{@score.quiz.title} のランキングをみる", quiz_scores_path(@score.quiz) %> |
+<%= link_to "クイズ一覧に戻る", quizzes_path %>
+</div>

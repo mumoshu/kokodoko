@@ -1,0 +1,24 @@
+<h1>Listing marks</h1>
+
+<table>
+  <tr>
+    <th>Lat</th>
+    <th>Lng</th>
+    <th>Title</th>
+  </tr>
+
+<% for mark in @marks %>
+  <tr>
+    <td><%=h mark.lat %></td>
+    <td><%=h mark.lng %></td>
+    <td><%=h mark.title %></td>
+    <td><%= link_to 'Show', [@quiz,mark] %></td>
+    <td><%= link_to 'Edit', edit_quiz_mark_path(@quiz,mark) %></td>
+    <td><%= link_to 'Destroy', [@quiz,mark], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New mark', new_quiz_mark_path %>

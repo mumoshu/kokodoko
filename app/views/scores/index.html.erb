@@ -1,0 +1,25 @@
+<h1>
+<% if @user %>
+<%= link_to @user.nickname, @user %> さんの得点
+<% elsif @quiz %>
+<%= link_to @quiz.title, @quiz %> のランキング 
+<% end %>
+</h1>
+
+<% if @user %>
+<% for score in @user.scores %>
+<div>
+<%= link_to score.quiz.title, score.quiz %> - <%= score.score %> 点
+</div>
+<% end %>
+<% else %>
+<% for score in @quiz.scores.sort_by(&:score).reverse %>
+<div><%= link_to score.user.nickname, score.user %> さん - <%= score.score %> 点</div>
+<% end %>
+<% end %>
+
+<br/>
+
+<div id="footer">
+<%= link_to "クイズ一覧に戻る", quizzes_path %>
+</div>

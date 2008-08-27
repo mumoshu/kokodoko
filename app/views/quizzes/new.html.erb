@@ -1,0 +1,36 @@
+<h1>新しいクイズ</h1>
+
+<% form_for(@quiz) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :num_questions %><br />
+    <%= f.text_field :num_questions %>
+  </p>
+  <p>
+    <%= f.label :magnify_scale %><br />
+    <%= f.text_field :magnify_scale %>
+  </p>
+  <p>
+    <%= f.label :normal_scale %><br />
+    <%= f.text_field :normal_scale %>
+  </p>
+  <p>
+    <%= f.label :demagnify_scale %><br />
+    <%= f.text_field :demagnify_scale %>
+  </p>
+  <p>
+    <%= f.label :view_type %><br />
+    <%= f.select :view_type, [ %w(衛星写真 satellite), %w(ストリートビュー street) ] %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', quizzes_path %>

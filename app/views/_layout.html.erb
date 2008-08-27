@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>
+    <% if @content_for_title %>
+    <%= @content_for_title %>
+    <% else %>
+    <%= controller.action_name %>
+    <% end %>
+  </title>
+  <%= javascript_include_tag :defaults %>
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'holy-grail-no-quirks-mode' %>
+  <%= stylesheet_link_tag 'global_navi' %>
+  <%= @content_for_header %>
+</head>
+
+<% if @content_for_body %>
+<%= @content_for_body %>
+<% else %>
+<body>
+
+<div id="header">
+<h1>
+ここどこ
+</h1>
+<table height="34" cellpadding="4" style="color:#666">
+<tr>
+<% if session[:user] %>
+<td>ようこそ <strong><%= link_to session[:user].nickname, session[:user] %></strong> さん</td>
+<% else %>
+<td><%= link_to "OpenIDでログイン", :controller => "login", :action => "login" %>すると、クイズを投稿したり、得点ランキングに参加することができます。</td>
+<% end %>
+</tr>
+</table>
+<div id="navigation">
+<ul id="globalNavi">
+<li><%= link_to "クイズを探す", :controller => "quizzes", :action => "index" %></li>
+<li><%= link_to "クイズを投稿する", :controller => "quizzes", :action => "new" %></li>
+<% if session[:user] %>
+<li><%= link_to "#{session[:user].nickname}さんのページ", session[:user] %></li>
+<li><%= link_to "ログアウト", :controller => "login", :action => "logout" %></li>
+<% else %>
+<li><%= link_to "ログイン", :controller => "login", :action => "login" %></li>
+<% end %>
+
+</ul>
+</div>
+</div>
+
+<p style="color: green"><%= flash[:notice] %></p>
+<div id="colmask">
+<div id="colmid">
+<div id="colright">
+<div id="col1wrap">
+<div id="col1pad">
+<div id="col1">
+<%= yield  %>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+<% end %>
+
+
+</html>
+

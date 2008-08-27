@@ -1,0 +1,16 @@
+<% if flash[:notice] -%>
+<%= flash[:notice] -%>
+<% end -%>
+<% if flash[:error] -%>
+<%= flash[:error] -%>
+<% end -%>
+
+<div style="bold:true; color:#666">OpenIDの取得は<a href="https://www.myopenid.com/">myOpenID</a>がおすすめです。</div>
+<br/>
+<% form_tag :controller => "login", :action => "login" do |f| %>
+<label for="open_url" >
+  OpenID URL:
+</label>
+<%= text_field_tag :openid_url, nil, {:size => "50"} %>
+<%= submit_tag "ログイン" %>
+<% end -%>

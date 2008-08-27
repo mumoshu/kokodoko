@@ -1,0 +1,24 @@
+<h1>Listing scores</h1>
+
+<table>
+  <tr>
+    <th>Quiz</th>
+    <th>User</th>
+    <th>Score</th>
+  </tr>
+
+<% for score in @scores %>
+  <tr>
+    <td><%=h score.quiz_id %></td>
+    <td><%=h score.user_id %></td>
+    <td><%=h score.score %></td>
+    <td><%= link_to 'Show', score %></td>
+    <td><%= link_to 'Edit', edit_score_path(score) %></td>
+    <td><%= link_to 'Destroy', score, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New score', new_score_path %>
