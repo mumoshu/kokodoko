@@ -39,15 +39,18 @@ function set_hint_latlng(point) {
 function open_hint_window(point) {
     var hint2;
     var hint_div;
-
+    
+    var event = GEvent.addListener(marker,'infowindowopen', function() {
+	hint2 = new GStreetviewPanorama($('hint2'));
+	hint2.setLocationAndPOV(point,null);
+	GEvent.removeListener(event);
+    });
     marker.openInfoWindowHtml("<div id='hint2' style='width:240px;height:200px;'>loading...</div>");
-    hint2 = new GStreetviewPanorama($('hint2'));
-    hint2.setLocationAndPOV(point,null);
 }
 
 function quiz_init() {
-    ids = new Array("map","ansmap","pano","answer","point","total","q_rest","hint");
-    while (id = ids.pop()) {
+    var ids = new Array("map","ansmap","pano","answer","point","total","q_rest","hint");
+    while (var id = ids.pop()) {
 	quiz[id] = document.getElementById(id);
     }
 
