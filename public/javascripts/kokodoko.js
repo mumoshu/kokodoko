@@ -49,8 +49,10 @@ function open_hint_window(point) {
 }
 
 function quiz_init() {
-    var ids = new Array("map","ansmap","pano","answer","point","total","q_rest","hint");
-    while (var id = ids.pop()) {
+    var id;
+    var ids;
+    ids = new Array("map","ansmap","pano","answer","point","total","q_rest","hint");
+    while (id = ids.pop()) {
 	quiz[id] = document.getElementById(id);
     }
 

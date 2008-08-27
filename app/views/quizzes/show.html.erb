@@ -4,8 +4,7 @@
 
 <% content_for(:header) do %>
 
-  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAFWWhd6xu7eDT15nkp1sQQxQ2ZspTbS5XvquBQmPB_A0jTVxSphTj4c2GeTMxKQOZQ-0bRpDwUaiQaQ"
-      type="text/javascript"></script>
+  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAFWWhd6xu7eDT15nkp1sQQxQ2ZspTbS5XvquBQmPB_A0jTVxSphTj4c2GeTMxKQOZQ-0bRpDwUaiQaQ" type="text/javascript"></script>
 
   <style type="text/css">
     #map {
@@ -42,7 +41,10 @@
 
 <% end %>
 
-  <H2><%=h @quiz.title %></h2>
+<% content_for :left do %>
+<H2><%=h @quiz.title %></h2>
+<% end %>
+
   <div id="quiz">
       <div id="pano" style="width: 500px; height: 300px"></div>
       <div id="map" style="width: 500px; height: 300px"></div>

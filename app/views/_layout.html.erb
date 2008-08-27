@@ -24,9 +24,7 @@
 <body>
 
 <div id="header">
-<h1>
-ここどこ
-</h1>
+<h1>ここどこ</h1>
 <table height="34" cellpadding="4" style="color:#666">
 <tr>
 <% if session[:user] %>
@@ -46,7 +44,6 @@
 <% else %>
 <li><%= link_to "ログイン", :controller => "login", :action => "login" %></li>
 <% end %>
-
 </ul>
 </div>
 </div>
@@ -55,19 +52,24 @@
 <div id="colmask">
 <div id="colmid">
 <div id="colright">
+
 <div id="col1wrap">
 <div id="col1pad">
 <div id="col1">
-<%= yield  %>
+<%= yield %>
 </div>
 </div>
 </div>
+
+<div id="col2"><%= @content_for_left %></div>
+
+<div id="col3"><%= @content_for_right %></div>
+
 </div>
 </div>
 </div>
 </body>
 <% end %>
-
 
 </html>
 
