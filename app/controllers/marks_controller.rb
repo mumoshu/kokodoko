@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 class MarksController < ApplicationController
+  nested_layout
   before_filter :set_up
   before_filter :authorize  
 

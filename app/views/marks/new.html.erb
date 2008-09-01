@@ -1,9 +1,9 @@
 <h1>New mark</h1>
 
+<%= render :partial => "edit_map" %>
+
 <% form_for([@quiz,@mark]) do |f| %>
   <%= f.error_messages %>
-
-  <%= render :partial => 'edit_map', :object => @mark %>
 
   <p>
     <%= f.label :lat %><br />
