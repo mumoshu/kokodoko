@@ -22,4 +22,10 @@ class ApplicationController < ActionController::Base
   # Uncomment this to filter the contents of submitted sensitive data parameters
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password
+
+  alias old_guard_from_nested_layouts guard_from_nested_layouts
+  
+  def guard_from_nested_layouts
+    old_guard_from_nested_layouts or parent_controller
+  end
 end
