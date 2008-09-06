@@ -47,7 +47,7 @@
 
   <div id="quiz">
       <div id="pano" style="width: 500px; height: 300px"></div>
-      <div id="map" style="width: 500px; height: 300px"></div>
+      <div id="map" style="width: 800px; height: 600px"></div>
       <div id="ansmap" style="width: 500px; height: 300px"></div>
       <div id="hint" style="width: 500px; height: 300px"></div>
   </div>
@@ -61,10 +61,10 @@
   <% end %>
   <input type="button" onclick="quiz.give_up()" value="ギブアップ"></input>
   <br/>
-  <div id="point"></div> // 加算点
-  <div id="total"></div> // 合計点
-  <div id="message"></div> // メッセージ
-  <div id="rate"></div> //正答率
+  <div id="point"></div>
+  <div id="total"></div>
+  <div id="message"></div>
+  <div id="rate"></div>
   <div id="q_rest"></div>
   <% @score = Score.new; @score.user = session[:user_id]; @score.quiz = @quiz %>
   <div style="display:none">

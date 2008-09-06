@@ -44,6 +44,8 @@ class ScoresController < ApplicationController
   # POST /scores.xml
   def create
     @score = Score.new(params[:score])
+    @score.quiz.num_plays += 1
+    @score.quiz.save
     
     unless @score.user_id
       return respond_to do |format|

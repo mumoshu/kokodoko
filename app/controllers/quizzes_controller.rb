@@ -7,6 +7,7 @@ class QuizzesController < ApplicationController
   # GET /quizzes.xml
   def index
     @quizzes = Quiz.find(:all)
+    @users = User.find(:all)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -19,6 +20,8 @@ class QuizzesController < ApplicationController
   def show
     @quiz = Quiz.find(params[:id])
     @marks = @quiz.marks.shuffle
+    @quiz.num_accesses += 1;
+    @quiz.save
 
     respond_to do |format|
       format.html # show.html.erb

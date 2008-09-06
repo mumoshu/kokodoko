@@ -7,7 +7,7 @@
 ul#globalNavi {
 	margin: 0;
 	padding: 0;
-	width: 500px; /* 必ずwidthの設定をしてください */
+	width: 800px; /* 必ずwidthの設定をしてください */
 }
 
 ul#globalNavi:after {
@@ -22,7 +22,7 @@ ul#globalNavi li {
 	margin: 0;
 	padding: 0;
 	float: left;
-	width: 120px; /* ボタンの幅 */
+	width: 150px; /* ボタンの幅 def:120*/
 	line-height: 1;
 	list-style-type: none;
 }

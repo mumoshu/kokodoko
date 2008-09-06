@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080806141935) do
+ActiveRecord::Schema.define(:version => 20080906183137) do
 
   create_table "marks", :force => true do |t|
     t.string   "lat"
@@ -48,6 +48,8 @@ ActiveRecord::Schema.define(:version => 20080806141935) do
     t.integer  "demagnify_scale"
     t.string   "view_type"
     t.integer  "user_id"
+    t.integer  "num_accesses",    :default => 0
+    t.integer  "num_plays",       :default => 0
   end
 
   create_table "scores", :force => true do |t|

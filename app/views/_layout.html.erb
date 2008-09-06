@@ -50,22 +50,12 @@
 
 <p style="color: green"><%= flash[:notice] %></p>
 <div id="colmask">
-<div id="colmid">
-<div id="colright">
-
-<div id="col1wrap">
-<div id="col1pad">
 <div id="col1">
 <%= yield %>
-</div>
-</div>
-</div>
-
 <div id="col2"><%= @content_for_left %></div>
 
 <div id="col3"><%= @content_for_right %></div>
 
-</div>
 </div>
 </div>
 </body>
