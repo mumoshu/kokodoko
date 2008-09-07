@@ -24,7 +24,7 @@
 <body>
 
 <div id="header">
-<h1>ここどこ</h1>
+<span style="font-size: 300%">ここどこ</span><span style="font-size: 200%"><%= "::#{@content_for_title}" if @content_for_title %></span>
 <table height="34" cellpadding="4" style="color:#666">
 <tr>
 <% if session[:user] %>
@@ -36,13 +36,13 @@
 </table>
 <div id="navigation">
 <ul id="globalNavi">
-<li><%= link_to "クイズを探す", :controller => "quizzes", :action => "index" %></li>
-<li><%= link_to "クイズを投稿する", :controller => "quizzes", :action => "new" %></li>
+<li><%= link_to "*クイズを探す*", :controller => "quizzes", :action => "index" %></li>
+<li><%= link_to "*クイズを投稿する*", :controller => "quizzes", :action => "new" %></li>
 <% if session[:user] %>
-<li><%= link_to "#{session[:user].nickname}さんのページ", session[:user] %></li>
-<li><%= link_to "ログアウト", :controller => "login", :action => "logout" %></li>
+<li><%= link_to "*マイページ*", session[:user] %></li>
+<li><%= link_to "*ログアウト*", :controller => "login", :action => "logout" %></li>
 <% else %>
-<li><%= link_to "ログイン", :controller => "login", :action => "login" %></li>
+<li><%= link_to "*ログイン*", :controller => "login", :action => "login" %></li>
 <% end %>
 </ul>
 </div>
@@ -50,14 +50,19 @@
 
 <p style="color: green"><%= flash[:notice] %></p>
 <div id="colmask">
-<div id="col1">
+<div>
 <%= yield %>
-<div id="col2"><%= @content_for_left %></div>
+<div><%= @content_for_left %></div>
 
-<div id="col3"><%= @content_for_right %></div>
+<div><%= @content_for_right %></div>
 
 </div>
 </div>
+
+<div id="footer">
+<p>ここどこ ©2008 Kuoka, Yusuke All Right Reserved.</p>
+</div>
+
 </body>
 <% end %>
 

@@ -5,7 +5,11 @@ body {
 	background:#fff;
 	min-width:600px;		/* Minimum width of layout - remove line if not required */
 					/* The min-width property does not work in old versions of Internet Explorer */
-	font-size:90%;
+/*	font-size:90%;*/
+	line-height:1.4;
+	color:#666666;
+	font-family:Arial, sans-serif;
+	font-size:0.9em;
 }
 a {
 	color:#369;
@@ -31,7 +35,7 @@ img {
 	width:100%;
 	padding:0;
 	margin:0;
-	border-bottom:1px solid #000;
+	border-bottom:1px solid #cccccc;
 }
 #header p {
 	padding:.5em 15px	.2em 15px;
@@ -51,7 +55,8 @@ img {
 	float:left;
 	width:100%;			/* width of whole page */
 	overflow:hidden;		/* This chops off any overhanging divs */
-	background:#ffd8b7;		/* Left column background colour */
+/*	background:#ffd8b7;*/		/* Left column background colour */
+	background:#ffffff;
 }
 #colmid {
 	float:left;
@@ -103,7 +108,8 @@ img {
 	width:100%;
 	padding:0;
 	margin:0;
-	border-top:1px solid #000;
+/*	border-top:1px solid #000;*/
+	border-top: 1px solid #CCCCCC;
 }
 #footer p {
 	padding:.5em 15px;
