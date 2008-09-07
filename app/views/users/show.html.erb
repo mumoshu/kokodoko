@@ -1,8 +1,6 @@
 <% content_for :title do %>
-<%= @user.nickname %>さんのマイページ - ここどこクイズ
+<%= @user.nickname %>のページ
 <% end %>
-
-<h2><%= @user.nickname %>さんのマイページ</h2>
 
 <div style="padding:4px">
 <h2>投稿クイズ</h2>
@@ -28,8 +26,6 @@
 <br/>
 
 <div id="footer">
-<%= link_to 'クイズを投稿する', new_quiz_path %> | 
-<%= link_to 'クイズ一覧をみる', quizzes_path %> |
 <%= link_to 'ユーザ情報を変更する', edit_user_path(@user) %> |
 <%= link_to 'ユーザ一覧へ', users_path %>
 </div>

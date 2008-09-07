@@ -42,7 +42,6 @@
 <% end %>
 
 <% content_for :left do %>
-<H2><%=h @quiz.title %></h2>
 <% end %>
 
   <div id="quiz">
@@ -75,7 +74,3 @@
   <%= f.submit "Send" %>
   <% end %>
   </div>
-
-<%= link_to 'Edit', edit_quiz_path(@quiz) %> |
-<%= link_to 'Back', quizzes_path %> |
-<%= link_to 'Marks', quiz_marks_path(@quiz) %>

@@ -10,6 +10,7 @@ body {
 	color:#666666;
 	font-family:Arial, sans-serif;
 	font-size:0.9em;
+	padding: 0.5em 15px;
 }
 a {
 	color:#369;
@@ -50,6 +51,7 @@ img {
 	margin:0;
 }
 #colmask {
+    	padding-bottom: 32px;
 	position:relative;	/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
 	clear:both;
 	float:left;

@@ -49357,3 +49357,887 @@ Rendering quizzes/show
 Rendering nested layouts ["/layout"]
 Rendered _layout (0.00359)
 Completed in 0.18924 (5 reqs/sec) | Rendering: 0.00557 (2%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/1]
+
+
+Processing QuizzesController#index (for 120.74.217.175 at 2008-09-07 03:50:38) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBzY29y
+ZXMwOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0cmlidXRlc3sKIg9jcmVh
+dGVkX2F0IhgyMDA4LTA4LTA1IDE4OjA5OjQ3Ig91cGRhdGVkX2F0IhgyMDA4
+LTA4LTA2IDE1OjEzOjIyIg1uaWNrbmFtZSIR44KA44KC44GX44KFIgdpZCIG
+MSIRaWRlbnRpdHlfdXJsIiFodHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20v
+OhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--98e779cf094500b0e4b9dc28fcae48b3feee6782
+  Parameters: {"action"=>"index", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.001831)[0m   [0;1mSELECT * FROM "quizzes" [0m
+  [4;35;1mUser Load (0.000375)[0m   [0mSELECT * FROM "users" [0m
+Rendering quizzes/index
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00284)
+Completed in 0.01988 (50 reqs/sec) | Rendering: 0.00478 (24%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes]
+
+
+Processing QuizzesController#index (for 120.74.217.175 at 2008-09-07 03:51:29) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBz
+Y29yZXMwOhBAYXR0cmlidXRlc3sKIg9jcmVhdGVkX2F0IhgyMDA4LTA4LTA1
+IDE4OjA5OjQ3Ig1uaWNrbmFtZSIR44KA44KC44GX44KFIg91cGRhdGVkX2F0
+IhgyMDA4LTA4LTA2IDE1OjEzOjIyIgdpZCIGMSIRaWRlbnRpdHlfdXJsIiFo
+dHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20vOhZAYXR0cmlidXRlc19jYWNo
+ZXsAOhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--6761746baadad7091bda19968016a8f680950ba0
+  Parameters: {"action"=>"index", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.001758)[0m   [0;1mSELECT * FROM "quizzes" [0m
+  [4;35;1mUser Load (0.000377)[0m   [0mSELECT * FROM "users" [0m
+Rendering quizzes/index
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00278)
+Completed in 0.01958 (51 reqs/sec) | Rendering: 0.00471 (24%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes]
+
+
+Processing QuizzesController#index (for 120.74.217.175 at 2008-09-07 03:55:12) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBzY29y
+ZXMwOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0cmlidXRlc3sKIg9jcmVh
+dGVkX2F0IhgyMDA4LTA4LTA1IDE4OjA5OjQ3Ig91cGRhdGVkX2F0IhgyMDA4
+LTA4LTA2IDE1OjEzOjIyIg1uaWNrbmFtZSIR44KA44KC44GX44KFIgdpZCIG
+MSIRaWRlbnRpdHlfdXJsIiFodHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20v
+OhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--98e779cf094500b0e4b9dc28fcae48b3feee6782
+  Parameters: {"action"=>"index", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.001885)[0m   [0;1mSELECT * FROM "quizzes" [0m
+  [4;35;1mUser Load (0.000382)[0m   [0mSELECT * FROM "users" [0m
+Rendering quizzes/index
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00288)
+Completed in 0.02060 (48 reqs/sec) | Rendering: 0.00483 (23%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes]
+
+
+Processing QuizzesController#show (for 120.74.217.175 at 2008-09-07 03:55:38) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBz
+Y29yZXMwOhBAYXR0cmlidXRlc3sKIg9jcmVhdGVkX2F0IhgyMDA4LTA4LTA1
+IDE4OjA5OjQ3Ig1uaWNrbmFtZSIR44KA44KC44GX44KFIg91cGRhdGVkX2F0
+IhgyMDA4LTA4LTA2IDE1OjEzOjIyIgdpZCIGMSIRaWRlbnRpdHlfdXJsIiFo
+dHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20vOhZAYXR0cmlidXRlc19jYWNo
+ZXsAOhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--6761746baadad7091bda19968016a8f680950ba0
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.000317)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 1) [0m
+  [4;35;1mMark Load (0.002834)[0m   [0mSELECT * FROM "marks" WHERE ("marks".quiz_id = 1) [0m
+  [4;36;1mQuiz Update (0.000445)[0m   [0;1mUPDATE "quizzes" SET "updated_at" = '2008-09-07 10:55:38', "num_accesses" = 15 WHERE "id" = 1[0m
+Rendering quizzes/show
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00360)
+Completed in 7.12300 (0 reqs/sec) | Rendering: 0.00568 (0%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/1/]
+
+
+Processing QuizzesController#show (for 120.74.217.175 at 2008-09-07 03:56:11) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBzY29y
+ZXMwOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0cmlidXRlc3sKIg9jcmVh
+dGVkX2F0IhgyMDA4LTA4LTA1IDE4OjA5OjQ3Ig91cGRhdGVkX2F0IhgyMDA4
+LTA4LTA2IDE1OjEzOjIyIg1uaWNrbmFtZSIR44KA44KC44GX44KFIgdpZCIG
+MSIRaWRlbnRpdHlfdXJsIiFodHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20v
+OhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--98e779cf094500b0e4b9dc28fcae48b3feee6782
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.000312)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 1) [0m
+  [4;35;1mMark Load (0.002802)[0m   [0mSELECT * FROM "marks" WHERE ("marks".quiz_id = 1) [0m
+  [4;36;1mQuiz Update (0.000450)[0m   [0;1mUPDATE "quizzes" SET "updated_at" = '2008-09-07 10:56:11', "num_accesses" = 16 WHERE "id" = 1[0m
+Rendering quizzes/show
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00348)
+Completed in 0.03926 (25 reqs/sec) | Rendering: 0.00548 (13%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/1/]
+
+
+Processing QuizzesController#show (for 120.74.217.175 at 2008-09-07 03:56:30) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBz
+Y29yZXMwOhBAYXR0cmlidXRlc3sKIg9jcmVhdGVkX2F0IhgyMDA4LTA4LTA1
+IDE4OjA5OjQ3Ig1uaWNrbmFtZSIR44KA44KC44GX44KFIg91cGRhdGVkX2F0
+IhgyMDA4LTA4LTA2IDE1OjEzOjIyIgdpZCIGMSIRaWRlbnRpdHlfdXJsIiFo
+dHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20vOhZAYXR0cmlidXRlc19jYWNo
+ZXsAOhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--6761746baadad7091bda19968016a8f680950ba0
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.000313)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 1) [0m
+  [4;35;1mMark Load (0.002821)[0m   [0mSELECT * FROM "marks" WHERE ("marks".quiz_id = 1) [0m
+  [4;36;1mQuiz Update (0.000458)[0m   [0;1mUPDATE "quizzes" SET "updated_at" = '2008-09-07 10:56:30', "num_accesses" = 17 WHERE "id" = 1[0m
+Rendering quizzes/show
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00344)
+Completed in 0.07505 (13 reqs/sec) | Rendering: 0.00540 (7%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/1/]
+
+
+Processing QuizzesController#show (for 120.74.217.175 at 2008-09-07 03:56:49) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBzY29y
+ZXMwOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0cmlidXRlc3sKIg9jcmVh
+dGVkX2F0IhgyMDA4LTA4LTA1IDE4OjA5OjQ3Ig91cGRhdGVkX2F0IhgyMDA4
+LTA4LTA2IDE1OjEzOjIyIg1uaWNrbmFtZSIR44KA44KC44GX44KFIgdpZCIG
+MSIRaWRlbnRpdHlfdXJsIiFodHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20v
+OhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--98e779cf094500b0e4b9dc28fcae48b3feee6782
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.000334)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 1) [0m
+  [4;35;1mMark Load (0.002845)[0m   [0mSELECT * FROM "marks" WHERE ("marks".quiz_id = 1) [0m
+  [4;36;1mQuiz Update (0.000509)[0m   [0;1mUPDATE "quizzes" SET "updated_at" = '2008-09-07 10:56:49', "num_accesses" = 18 WHERE "id" = 1[0m
+Rendering quizzes/show
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00346)
+Completed in 0.33522 (2 reqs/sec) | Rendering: 0.00547 (1%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/1/]
+
+
+Processing QuizzesController#show (for 120.74.217.175 at 2008-09-07 03:59:07) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBz
+Y29yZXMwOhBAYXR0cmlidXRlc3sKIg9jcmVhdGVkX2F0IhgyMDA4LTA4LTA1
+IDE4OjA5OjQ3Ig1uaWNrbmFtZSIR44KA44KC44GX44KFIg91cGRhdGVkX2F0
+IhgyMDA4LTA4LTA2IDE1OjEzOjIyIgdpZCIGMSIRaWRlbnRpdHlfdXJsIiFo
+dHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20vOhZAYXR0cmlidXRlc19jYWNo
+ZXsAOhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--6761746baadad7091bda19968016a8f680950ba0
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.000366)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 1) [0m
+  [4;35;1mMark Load (0.003235)[0m   [0mSELECT * FROM "marks" WHERE ("marks".quiz_id = 1) [0m
+  [4;36;1mQuiz Update (0.000746)[0m   [0;1mUPDATE "quizzes" SET "updated_at" = '2008-09-07 10:59:08', "num_accesses" = 19 WHERE "id" = 1[0m
+Rendering quizzes/show
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00695)
+Completed in 0.06817 (14 reqs/sec) | Rendering: 0.01253 (18%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/1/]
+
+
+Processing UsersController#show (for 120.74.217.175 at 2008-09-07 03:59:36) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBzY29y
+ZXMwOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0cmlidXRlc3sKIg9jcmVh
+dGVkX2F0IhgyMDA4LTA4LTA1IDE4OjA5OjQ3Ig91cGRhdGVkX2F0IhgyMDA4
+LTA4LTA2IDE1OjEzOjIyIg1uaWNrbmFtZSIR44KA44KC44GX44KFIgdpZCIG
+MSIRaWRlbnRpdHlfdXJsIiFodHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20v
+OhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--98e779cf094500b0e4b9dc28fcae48b3feee6782
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000220)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mQuiz Load (0.000699)[0m   [0mSELECT * FROM "quizzes" WHERE ("quizzes"."user_id" = 1) [0m
+Rendering users/show
+  [4;36;1mSQL (0.000221)[0m   [0;1mSELECT count(*) AS count_all FROM "quizzes" WHERE ("quizzes".user_id = 1) [0m
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00276)
+Completed in 0.02030 (49 reqs/sec) | Rendering: 0.00471 (23%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/users/1]
+
+
+Processing UsersController#show (for 120.74.217.175 at 2008-09-07 04:00:16) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOgxAc2NvcmVzMDoNQHF1aXp6ZXMwOhhAY2hh
+bmdlZF9hdHRyaWJ1dGVzewA6EEBhdHRyaWJ1dGVzewoiD2NyZWF0ZWRfYXQi
+GDIwMDgtMDgtMDUgMTg6MDk6NDciDW5pY2tuYW1lIhHjgoDjgoLjgZfjgoUi
+D3VwZGF0ZWRfYXQiGDIwMDgtMDgtMDYgMTU6MTM6MjIiB2lkIgYxIhFpZGVu
+dGl0eV91cmwiIWh0dHA6Ly9tdW1vc2h1Lm15b3BlbmlkLmNvbS86FkBhdHRy
+aWJ1dGVzX2NhY2hlewA6HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--3231d0fdfc0ed6f87ae95fb07428e530632fb7e2
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000221)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mQuiz Load (0.000655)[0m   [0mSELECT * FROM "quizzes" WHERE ("quizzes"."user_id" = 1) [0m
+Rendering users/show
+  [4;36;1mSQL (0.000210)[0m   [0;1mSELECT count(*) AS count_all FROM "quizzes" WHERE ("quizzes".user_id = 1) [0m
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00286)
+Completed in 0.02051 (48 reqs/sec) | Rendering: 0.00486 (23%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/users/1]
+
+
+Processing UsersController#show (for 120.74.217.175 at 2008-09-07 04:01:11) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOgxAc2NvcmVzMDoYQGNoYW5nZWRfYXR0cmlidXRl
+c3sAOg1AcXVpenplczA6FkBhdHRyaWJ1dGVzX2NhY2hlewA6EEBhdHRyaWJ1
+dGVzewoiD2NyZWF0ZWRfYXQiGDIwMDgtMDgtMDUgMTg6MDk6NDciD3VwZGF0
+ZWRfYXQiGDIwMDgtMDgtMDYgMTU6MTM6MjIiDW5pY2tuYW1lIhHjgoDjgoLj
+gZfjgoUiB2lkIgYxIhFpZGVudGl0eV91cmwiIWh0dHA6Ly9tdW1vc2h1Lm15
+b3BlbmlkLmNvbS86HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--79bd99513b62b6764100c26e031a8a884e904696
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000222)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mQuiz Load (0.000689)[0m   [0mSELECT * FROM "quizzes" WHERE ("quizzes"."user_id" = 1) [0m
+Rendering users/show
+  [4;36;1mSQL (0.000236)[0m   [0;1mSELECT count(*) AS count_all FROM "quizzes" WHERE ("quizzes".user_id = 1) [0m
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00284)
+Completed in 0.02080 (48 reqs/sec) | Rendering: 0.00484 (23%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/users/1]
+
+
+Processing UsersController#index (for 120.74.217.175 at 2008-09-07 04:02:14) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOgxAc2NvcmVzMDoNQHF1aXp6ZXMwOhhAY2hh
+bmdlZF9hdHRyaWJ1dGVzewA6EEBhdHRyaWJ1dGVzewoiD2NyZWF0ZWRfYXQi
+GDIwMDgtMDgtMDUgMTg6MDk6NDciDW5pY2tuYW1lIhHjgoDjgoLjgZfjgoUi
+D3VwZGF0ZWRfYXQiGDIwMDgtMDgtMDYgMTU6MTM6MjIiB2lkIgYxIhFpZGVu
+dGl0eV91cmwiIWh0dHA6Ly9tdW1vc2h1Lm15b3BlbmlkLmNvbS86FkBhdHRy
+aWJ1dGVzX2NhY2hlewA6HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--3231d0fdfc0ed6f87ae95fb07428e530632fb7e2
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.001304)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering users/index
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00286)
+Completed in 0.02150 (46 reqs/sec) | Rendering: 0.00479 (22%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/users]
+
+
+Processing UsersController#show (for 120.74.217.175 at 2008-09-07 04:02:25) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOgxAc2NvcmVzMDoYQGNoYW5nZWRfYXR0cmlidXRl
+c3sAOg1AcXVpenplczA6FkBhdHRyaWJ1dGVzX2NhY2hlewA6EEBhdHRyaWJ1
+dGVzewoiD2NyZWF0ZWRfYXQiGDIwMDgtMDgtMDUgMTg6MDk6NDciD3VwZGF0
+ZWRfYXQiGDIwMDgtMDgtMDYgMTU6MTM6MjIiDW5pY2tuYW1lIhHjgoDjgoLj
+gZfjgoUiB2lkIgYxIhFpZGVudGl0eV91cmwiIWh0dHA6Ly9tdW1vc2h1Lm15
+b3BlbmlkLmNvbS86HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--79bd99513b62b6764100c26e031a8a884e904696
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000243)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mQuiz Load (0.000687)[0m   [0mSELECT * FROM "quizzes" WHERE ("quizzes"."user_id" = 1) [0m
+Rendering users/show
+  [4;36;1mSQL (0.000225)[0m   [0;1mSELECT count(*) AS count_all FROM "quizzes" WHERE ("quizzes".user_id = 1) [0m
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00291)
+Completed in 0.02058 (48 reqs/sec) | Rendering: 0.00492 (23%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/users/1]
+
+
+Processing QuizzesController#new (for 120.74.217.175 at 2008-09-07 04:02:29) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOgxAc2NvcmVzMDoNQHF1aXp6ZXMwOhhAY2hh
+bmdlZF9hdHRyaWJ1dGVzewA6EEBhdHRyaWJ1dGVzewoiD2NyZWF0ZWRfYXQi
+GDIwMDgtMDgtMDUgMTg6MDk6NDciDW5pY2tuYW1lIhHjgoDjgoLjgZfjgoUi
+D3VwZGF0ZWRfYXQiGDIwMDgtMDgtMDYgMTU6MTM6MjIiB2lkIgYxIhFpZGVu
+dGl0eV91cmwiIWh0dHA6Ly9tdW1vc2h1Lm15b3BlbmlkLmNvbS86FkBhdHRy
+aWJ1dGVzX2NhY2hlewA6HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--3231d0fdfc0ed6f87ae95fb07428e530632fb7e2
+  Parameters: {"action"=>"new", "controller"=>"quizzes"}
+Rendering quizzes/new
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00435)
+Completed in 0.01874 (53 reqs/sec) | Rendering: 0.00627 (33%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/new]
+
+
+Processing QuizzesController#index (for 120.74.217.175 at 2008-09-07 04:02:36) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBzY29y
+ZXMwOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0cmlidXRlc3sKIg9jcmVh
+dGVkX2F0IhgyMDA4LTA4LTA1IDE4OjA5OjQ3Ig91cGRhdGVkX2F0IhgyMDA4
+LTA4LTA2IDE1OjEzOjIyIg1uaWNrbmFtZSIR44KA44KC44GX44KFIgdpZCIG
+MSIRaWRlbnRpdHlfdXJsIiFodHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20v
+OhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--98e779cf094500b0e4b9dc28fcae48b3feee6782
+  Parameters: {"action"=>"index", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.001908)[0m   [0;1mSELECT * FROM "quizzes" [0m
+  [4;35;1mUser Load (0.000410)[0m   [0mSELECT * FROM "users" [0m
+Rendering quizzes/index
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00400)
+Completed in 0.02327 (42 reqs/sec) | Rendering: 0.00650 (27%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes]
+
+
+Processing QuizzesController#index (for 120.74.217.175 at 2008-09-07 04:05:46) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBz
+Y29yZXMwOhBAYXR0cmlidXRlc3sKIg9jcmVhdGVkX2F0IhgyMDA4LTA4LTA1
+IDE4OjA5OjQ3Ig1uaWNrbmFtZSIR44KA44KC44GX44KFIg91cGRhdGVkX2F0
+IhgyMDA4LTA4LTA2IDE1OjEzOjIyIgdpZCIGMSIRaWRlbnRpdHlfdXJsIiFo
+dHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20vOhZAYXR0cmlidXRlc19jYWNo
+ZXsAOhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--6761746baadad7091bda19968016a8f680950ba0
+  Parameters: {"action"=>"index", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.001774)[0m   [0;1mSELECT * FROM "quizzes" [0m
+  [4;35;1mUser Load (0.000377)[0m   [0mSELECT * FROM "users" [0m
+Rendering quizzes/index
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00276)
+Completed in 0.01953 (51 reqs/sec) | Rendering: 0.00468 (23%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes]
+
+
+Processing QuizzesController#index (for 120.74.217.175 at 2008-09-07 04:06:02) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBzY29y
+ZXMwOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0cmlidXRlc3sKIg9jcmVh
+dGVkX2F0IhgyMDA4LTA4LTA1IDE4OjA5OjQ3Ig91cGRhdGVkX2F0IhgyMDA4
+LTA4LTA2IDE1OjEzOjIyIg1uaWNrbmFtZSIR44KA44KC44GX44KFIgdpZCIG
+MSIRaWRlbnRpdHlfdXJsIiFodHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20v
+OhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--98e779cf094500b0e4b9dc28fcae48b3feee6782
+  Parameters: {"action"=>"index", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.001846)[0m   [0;1mSELECT * FROM "quizzes" [0m
+  [4;35;1mUser Load (0.000384)[0m   [0mSELECT * FROM "users" [0m
+Rendering quizzes/index
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00288)
+Completed in 0.02017 (49 reqs/sec) | Rendering: 0.00485 (24%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes]
+
+
+Processing QuizzesController#index (for 120.74.217.175 at 2008-09-07 04:06:55) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBz
+Y29yZXMwOhBAYXR0cmlidXRlc3sKIg9jcmVhdGVkX2F0IhgyMDA4LTA4LTA1
+IDE4OjA5OjQ3Ig1uaWNrbmFtZSIR44KA44KC44GX44KFIg91cGRhdGVkX2F0
+IhgyMDA4LTA4LTA2IDE1OjEzOjIyIgdpZCIGMSIRaWRlbnRpdHlfdXJsIiFo
+dHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20vOhZAYXR0cmlidXRlc19jYWNo
+ZXsAOhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--6761746baadad7091bda19968016a8f680950ba0
+  Parameters: {"action"=>"index", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.001764)[0m   [0;1mSELECT * FROM "quizzes" [0m
+  [4;35;1mUser Load (0.000378)[0m   [0mSELECT * FROM "users" [0m
+Rendering quizzes/index
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00281)
+Completed in 0.01959 (51 reqs/sec) | Rendering: 0.00473 (24%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes]
+
+
+Processing QuizzesController#index (for 120.74.217.175 at 2008-09-07 04:07:19) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBzY29y
+ZXMwOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0cmlidXRlc3sKIg9jcmVh
+dGVkX2F0IhgyMDA4LTA4LTA1IDE4OjA5OjQ3Ig91cGRhdGVkX2F0IhgyMDA4
+LTA4LTA2IDE1OjEzOjIyIg1uaWNrbmFtZSIR44KA44KC44GX44KFIgdpZCIG
+MSIRaWRlbnRpdHlfdXJsIiFodHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20v
+OhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--98e779cf094500b0e4b9dc28fcae48b3feee6782
+  Parameters: {"action"=>"index", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.001777)[0m   [0;1mSELECT * FROM "quizzes" [0m
+  [4;35;1mUser Load (0.000383)[0m   [0mSELECT * FROM "users" [0m
+Rendering quizzes/index
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00277)
+Completed in 0.01941 (51 reqs/sec) | Rendering: 0.00468 (24%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes]
+
+
+Processing QuizzesController#show (for 120.74.217.175 at 2008-09-07 04:07:25) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBz
+Y29yZXMwOhBAYXR0cmlidXRlc3sKIg9jcmVhdGVkX2F0IhgyMDA4LTA4LTA1
+IDE4OjA5OjQ3Ig1uaWNrbmFtZSIR44KA44KC44GX44KFIg91cGRhdGVkX2F0
+IhgyMDA4LTA4LTA2IDE1OjEzOjIyIgdpZCIGMSIRaWRlbnRpdHlfdXJsIiFo
+dHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20vOhZAYXR0cmlidXRlc19jYWNo
+ZXsAOhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--6761746baadad7091bda19968016a8f680950ba0
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.000313)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 2) [0m
+  [4;35;1mMark Load (0.000394)[0m   [0mSELECT * FROM "marks" WHERE ("marks".quiz_id = 2) [0m
+  [4;36;1mQuiz Update (0.000438)[0m   [0;1mUPDATE "quizzes" SET "updated_at" = '2008-09-07 11:07:25', "num_accesses" = 3 WHERE "id" = 2[0m
+Rendering quizzes/show
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00356)
+Completed in 7.70310 (0 reqs/sec) | Rendering: 0.00555 (0%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/2]
+
+
+Processing ScoresController#create (for 120.74.217.175 at 2008-09-07 04:07:52) [POST]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBzY29y
+ZXMwOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0cmlidXRlc3sKIg9jcmVh
+dGVkX2F0IhgyMDA4LTA4LTA1IDE4OjA5OjQ3Ig91cGRhdGVkX2F0IhgyMDA4
+LTA4LTA2IDE1OjEzOjIyIg1uaWNrbmFtZSIR44KA44KC44GX44KFIgdpZCIG
+MSIRaWRlbnRpdHlfdXJsIiFodHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20v
+OhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--98e779cf094500b0e4b9dc28fcae48b3feee6782
+  Parameters: {"commit"=>"Send", "authenticity_token"=>"fac3b003eb33b5f9ef133b31645d06a26ee009e2", "action"=>"create", "controller"=>"scores", "score"=>{"user_id"=>"1", "score"=>"0", "quiz_id"=>"2"}}
+  [4;36;1mQuiz Load (0.000353)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 2) [0m
+  [4;35;1mQuiz Update (0.000423)[0m   [0mUPDATE "quizzes" SET "updated_at" = '2008-09-07 11:07:52', "num_plays" = 2 WHERE "id" = 2[0m
+  [4;36;1mScore Create (0.000193)[0m   [0;1mINSERT INTO "scores" ("created_at", "updated_at", "user_id", "quiz_id", "score") VALUES('2008-09-07 11:07:52', '2008-09-07 11:07:52', 1, 2, 0)[0m
+Redirected to http://mumoshu.com/kokodoko/scores/9
+Completed in 0.02061 (48 reqs/sec) | DB: 0.00097 (4%) | 302 Found [http://mumoshu.com/kokodoko/scores]
+
+
+Processing ScoresController#show (for 120.74.217.175 at 2008-09-07 04:07:54) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOg1AcXVpenplczA6GEBjaGFuZ2VkX2F0dHJp
+YnV0ZXN7ADoQQGF0dHJpYnV0ZXN7CiIPY3JlYXRlZF9hdCIYMjAwOC0wOC0w
+NSAxODowOTo0NyINbmlja25hbWUiEeOCgOOCguOBl+OChSIPdXBkYXRlZF9h
+dCIYMjAwOC0wOC0wNiAxNToxMzoyMiIHaWQiBjEiEWlkZW50aXR5X3VybCIh
+aHR0cDovL211bW9zaHUubXlvcGVuaWQuY29tLzoWQGF0dHJpYnV0ZXNfY2Fj
+aGV7ADoMQHNjb3JlczA6HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIkU2NvcmUgd2FzIHN1Y2Nl
+c3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7E0Y6C2p1bXB0bzA=--bfb74ecdb3d843da53bba3020629e915b611dd4d
+  Parameters: {"action"=>"show", "id"=>"9", "controller"=>"scores"}
+  [4;36;1mScore Load (0.000234)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."id" = 9) [0m
+Rendering template within layouts/scores
+Rendering scores/show
+  [4;35;1mUser Load (0.000237)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mQuiz Load (0.000313)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 2) [0m
+Completed in 0.02966 (33 reqs/sec) | Rendering: 0.02282 (76%) | DB: 0.00078 (2%) | 200 OK [http://mumoshu.com/kokodoko/scores/9]
+
+
+Processing QuizzesController#index (for 120.74.217.175 at 2008-09-07 04:08:01) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOg1AcXVpenplczA6GEBjaGFuZ2VkX2F0dHJpYnV0
+ZXN7ADoMQHNjb3JlczA6FkBhdHRyaWJ1dGVzX2NhY2hlewA6EEBhdHRyaWJ1
+dGVzewoiD2NyZWF0ZWRfYXQiGDIwMDgtMDgtMDUgMTg6MDk6NDciD3VwZGF0
+ZWRfYXQiGDIwMDgtMDgtMDYgMTU6MTM6MjIiDW5pY2tuYW1lIhHjgoDjgoLj
+gZfjgoUiB2lkIgYxIhFpZGVudGl0eV91cmwiIWh0dHA6Ly9tdW1vc2h1Lm15
+b3BlbmlkLmNvbS86HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIkU2NvcmUgd2FzIHN1Y2Nl
+c3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7E1Q6C2p1bXB0bzA=--ab0365afe8bc78a639016e66f9ac258b2ff28f41
+  Parameters: {"action"=>"index", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.001812)[0m   [0;1mSELECT * FROM "quizzes" [0m
+  [4;35;1mUser Load (0.000383)[0m   [0mSELECT * FROM "users" [0m
+Rendering quizzes/index
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00281)
+Completed in 0.01996 (50 reqs/sec) | Rendering: 0.00480 (24%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes]
+
+
+Processing QuizzesController#index (for 120.74.217.175 at 2008-09-07 04:09:00) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBz
+Y29yZXMwOhBAYXR0cmlidXRlc3sKIg9jcmVhdGVkX2F0IhgyMDA4LTA4LTA1
+IDE4OjA5OjQ3Ig1uaWNrbmFtZSIR44KA44KC44GX44KFIg91cGRhdGVkX2F0
+IhgyMDA4LTA4LTA2IDE1OjEzOjIyIgdpZCIGMSIRaWRlbnRpdHlfdXJsIiFo
+dHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20vOhZAYXR0cmlidXRlc19jYWNo
+ZXsAOhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--6761746baadad7091bda19968016a8f680950ba0
+  Parameters: {"action"=>"index", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.001787)[0m   [0;1mSELECT * FROM "quizzes" [0m
+  [4;35;1mUser Load (0.000378)[0m   [0mSELECT * FROM "users" [0m
+Rendering quizzes/index
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00282)
+Completed in 0.01970 (50 reqs/sec) | Rendering: 0.00477 (24%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes]
+
+
+Processing UsersController#show (for 120.74.217.175 at 2008-09-07 04:09:36) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBzY29y
+ZXMwOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0cmlidXRlc3sKIg9jcmVh
+dGVkX2F0IhgyMDA4LTA4LTA1IDE4OjA5OjQ3Ig91cGRhdGVkX2F0IhgyMDA4
+LTA4LTA2IDE1OjEzOjIyIg1uaWNrbmFtZSIR44KA44KC44GX44KFIgdpZCIG
+MSIRaWRlbnRpdHlfdXJsIiFodHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20v
+OhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--98e779cf094500b0e4b9dc28fcae48b3feee6782
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000218)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mQuiz Load (0.000662)[0m   [0mSELECT * FROM "quizzes" WHERE ("quizzes"."user_id" = 1) [0m
+Rendering users/show
+  [4;36;1mSQL (0.000217)[0m   [0;1mSELECT count(*) AS count_all FROM "quizzes" WHERE ("quizzes".user_id = 1) [0m
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00281)
+Completed in 0.02031 (49 reqs/sec) | Rendering: 0.00474 (23%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/users/1]
+
+
+Processing QuizzesController#edit (for 120.74.217.175 at 2008-09-07 04:09:43) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOgxAc2NvcmVzMDoNQHF1aXp6ZXMwOhhAY2hh
+bmdlZF9hdHRyaWJ1dGVzewA6EEBhdHRyaWJ1dGVzewoiD2NyZWF0ZWRfYXQi
+GDIwMDgtMDgtMDUgMTg6MDk6NDciDW5pY2tuYW1lIhHjgoDjgoLjgZfjgoUi
+D3VwZGF0ZWRfYXQiGDIwMDgtMDgtMDYgMTU6MTM6MjIiB2lkIgYxIhFpZGVu
+dGl0eV91cmwiIWh0dHA6Ly9tdW1vc2h1Lm15b3BlbmlkLmNvbS86FkBhdHRy
+aWJ1dGVzX2NhY2hlewA6HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--3231d0fdfc0ed6f87ae95fb07428e530632fb7e2
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.000317)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 2) [0m
+Rendering quizzes/edit
+Start rendering component ({:params=>{:quiz_id=>2}, :action=>"index", :controller=>"marks"}): 
+
+
+Processing MarksController#index (for 120.74.217.175 at 2008-09-07 04:09:43) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOgxAc2NvcmVzMDoNQHF1aXp6ZXMwOhhAY2hh
+bmdlZF9hdHRyaWJ1dGVzewA6EEBhdHRyaWJ1dGVzewoiD2NyZWF0ZWRfYXQi
+GDIwMDgtMDgtMDUgMTg6MDk6NDciDW5pY2tuYW1lIhHjgoDjgoLjgZfjgoUi
+D3VwZGF0ZWRfYXQiGDIwMDgtMDgtMDYgMTU6MTM6MjIiB2lkIgYxIhFpZGVu
+dGl0eV91cmwiIWh0dHA6Ly9tdW1vc2h1Lm15b3BlbmlkLmNvbS86FkBhdHRy
+aWJ1dGVzX2NhY2hlewA6HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--3231d0fdfc0ed6f87ae95fb07428e530632fb7e2
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"marks", "quiz_id"=>2}
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 2) [0m
+Rendering marks/index
+  [4;36;1mMark Load (0.000481)[0m   [0;1mSELECT * FROM "marks" WHERE ("marks".quiz_id = 2) [0m
+Completed in 0.01802 (55 reqs/sec) | Rendering: 0.01369 (75%) | DB: 0.00048 (2%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/2/edit]
+
+
+End of component rendering
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00435)
+Completed in 0.05405 (18 reqs/sec) | Rendering: 0.00628 (11%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/2/edit]
+
+
+Processing MarksController#destroy (for 120.74.217.175 at 2008-09-07 04:09:53) [DELETE]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBzY29y
+ZXMwOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0cmlidXRlc3sKIg9jcmVh
+dGVkX2F0IhgyMDA4LTA4LTA1IDE4OjA5OjQ3Ig91cGRhdGVkX2F0IhgyMDA4
+LTA4LTA2IDE1OjEzOjIyIg1uaWNrbmFtZSIR44KA44KC44GX44KFIgdpZCIG
+MSIRaWRlbnRpdHlfdXJsIiFodHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20v
+OhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--98e779cf094500b0e4b9dc28fcae48b3feee6782
+  Parameters: {"authenticity_token"=>"fac3b003eb33b5f9ef133b31645d06a26ee009e2", "_method"=>"delete", "action"=>"destroy", "id"=>"31", "controller"=>"marks", "quiz_id"=>"2"}
+  [4;36;1mQuiz Load (0.000315)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 2) [0m
+  [4;35;1mMark Load (0.000315)[0m   [0mSELECT * FROM "marks" WHERE ("marks"."id" = 31 AND ("marks".quiz_id = 2)) [0m
+  [4;36;1mMark Destroy (0.000448)[0m   [0;1m DELETE FROM "marks"
+ WHERE "id" = 31
+[0m
+Redirected to http://mumoshu.com/kokodoko/quizzes/2/marks
+Completed in 0.02020 (49 reqs/sec) | DB: 0.00108 (5%) | 302 Found [http://mumoshu.com/kokodoko/quizzes/2/marks/31]
+
+
+Processing MarksController#index (for 120.74.217.175 at 2008-09-07 04:09:55) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOg1AcXVpenplczA6GEBjaGFuZ2VkX2F0dHJp
+YnV0ZXN7ADoMQHNjb3JlczA6EEBhdHRyaWJ1dGVzewoiD2NyZWF0ZWRfYXQi
+GDIwMDgtMDgtMDUgMTg6MDk6NDciDW5pY2tuYW1lIhHjgoDjgoLjgZfjgoUi
+D3VwZGF0ZWRfYXQiGDIwMDgtMDgtMDYgMTU6MTM6MjIiB2lkIgYxIhFpZGVu
+dGl0eV91cmwiIWh0dHA6Ly9tdW1vc2h1Lm15b3BlbmlkLmNvbS86FkBhdHRy
+aWJ1dGVzX2NhY2hlewA6HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--a3f149ae5dc9623a2e3d908af38c78df1e1a18f7
+  Parameters: {"action"=>"index", "controller"=>"marks", "quiz_id"=>"2"}
+  [4;36;1mQuiz Load (0.000326)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 2) [0m
+Rendering marks/index
+  [4;35;1mMark Load (0.000352)[0m   [0mSELECT * FROM "marks" WHERE ("marks".quiz_id = 2) [0m
+Rendering nested layouts ["/layout", "/marks/layout"]
+Rendered marks/_layout (0.00015)
+Rendered _layout (0.00485)
+Completed in 0.03244 (30 reqs/sec) | Rendering: 0.00689 (21%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/2/marks]
+
+
+Processing QuizzesController#index (for 120.74.217.175 at 2008-09-07 04:10:06) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOgxAc2NvcmVzMDoYQGNoYW5nZWRfYXR0cmlidXRl
+c3sAOg1AcXVpenplczA6FkBhdHRyaWJ1dGVzX2NhY2hlewA6EEBhdHRyaWJ1
+dGVzewoiD2NyZWF0ZWRfYXQiGDIwMDgtMDgtMDUgMTg6MDk6NDciD3VwZGF0
+ZWRfYXQiGDIwMDgtMDgtMDYgMTU6MTM6MjIiDW5pY2tuYW1lIhHjgoDjgoLj
+gZfjgoUiB2lkIgYxIhFpZGVudGl0eV91cmwiIWh0dHA6Ly9tdW1vc2h1Lm15
+b3BlbmlkLmNvbS86HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--79bd99513b62b6764100c26e031a8a884e904696
+  Parameters: {"action"=>"index", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.001778)[0m   [0;1mSELECT * FROM "quizzes" [0m
+  [4;35;1mUser Load (0.000380)[0m   [0mSELECT * FROM "users" [0m
+Rendering quizzes/index
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00278)
+Completed in 0.01978 (50 reqs/sec) | Rendering: 0.00474 (23%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes]
+
+
+Processing QuizzesController#show (for 120.74.217.175 at 2008-09-07 04:10:12) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBz
+Y29yZXMwOhBAYXR0cmlidXRlc3sKIg9jcmVhdGVkX2F0IhgyMDA4LTA4LTA1
+IDE4OjA5OjQ3Ig1uaWNrbmFtZSIR44KA44KC44GX44KFIg91cGRhdGVkX2F0
+IhgyMDA4LTA4LTA2IDE1OjEzOjIyIgdpZCIGMSIRaWRlbnRpdHlfdXJsIiFo
+dHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20vOhZAYXR0cmlidXRlc19jYWNo
+ZXsAOhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--6761746baadad7091bda19968016a8f680950ba0
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.000313)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 2) [0m
+  [4;35;1mMark Load (0.000295)[0m   [0mSELECT * FROM "marks" WHERE ("marks".quiz_id = 2) [0m
+  [4;36;1mQuiz Update (0.000440)[0m   [0;1mUPDATE "quizzes" SET "updated_at" = '2008-09-07 11:10:12', "num_accesses" = 4 WHERE "id" = 2[0m
+Rendering quizzes/show
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00344)
+Completed in 0.04652 (21 reqs/sec) | Rendering: 0.00545 (11%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/2]
+
+
+Processing ScoresController#create (for 120.74.217.175 at 2008-09-07 04:10:22) [POST]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBzY29y
+ZXMwOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0cmlidXRlc3sKIg9jcmVh
+dGVkX2F0IhgyMDA4LTA4LTA1IDE4OjA5OjQ3Ig91cGRhdGVkX2F0IhgyMDA4
+LTA4LTA2IDE1OjEzOjIyIg1uaWNrbmFtZSIR44KA44KC44GX44KFIgdpZCIG
+MSIRaWRlbnRpdHlfdXJsIiFodHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20v
+OhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--98e779cf094500b0e4b9dc28fcae48b3feee6782
+  Parameters: {"commit"=>"Send", "authenticity_token"=>"fac3b003eb33b5f9ef133b31645d06a26ee009e2", "action"=>"create", "controller"=>"scores", "score"=>{"user_id"=>"1", "score"=>"5", "quiz_id"=>"2"}}
+  [4;36;1mQuiz Load (0.000348)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 2) [0m
+  [4;35;1mQuiz Update (0.000477)[0m   [0mUPDATE "quizzes" SET "updated_at" = '2008-09-07 11:10:22', "num_plays" = 3 WHERE "id" = 2[0m
+  [4;36;1mScore Create (0.000273)[0m   [0;1mINSERT INTO "scores" ("created_at", "updated_at", "user_id", "quiz_id", "score") VALUES('2008-09-07 11:10:22', '2008-09-07 11:10:22', 1, 2, 5)[0m
+Redirected to http://mumoshu.com/kokodoko/scores/10
+Completed in 0.02912 (34 reqs/sec) | DB: 0.00110 (3%) | 302 Found [http://mumoshu.com/kokodoko/scores]
+
+
+Processing ScoresController#show (for 120.74.217.175 at 2008-09-07 04:10:23) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOg1AcXVpenplczA6GEBjaGFuZ2VkX2F0dHJp
+YnV0ZXN7ADoQQGF0dHJpYnV0ZXN7CiIPY3JlYXRlZF9hdCIYMjAwOC0wOC0w
+NSAxODowOTo0NyINbmlja25hbWUiEeOCgOOCguOBl+OChSIPdXBkYXRlZF9h
+dCIYMjAwOC0wOC0wNiAxNToxMzoyMiIHaWQiBjEiEWlkZW50aXR5X3VybCIh
+aHR0cDovL211bW9zaHUubXlvcGVuaWQuY29tLzoWQGF0dHJpYnV0ZXNfY2Fj
+aGV7ADoMQHNjb3JlczA6HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIkU2NvcmUgd2FzIHN1Y2Nl
+c3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7E0Y6C2p1bXB0bzA=--bfb74ecdb3d843da53bba3020629e915b611dd4d
+  Parameters: {"action"=>"show", "id"=>"10", "controller"=>"scores"}
+  [4;36;1mScore Load (0.000234)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."id" = 10) [0m
+Rendering template within layouts/scores
+Rendering scores/show
+  [4;35;1mUser Load (0.000215)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mQuiz Load (0.000322)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 2) [0m
+Completed in 0.01841 (54 reqs/sec) | Rendering: 0.01143 (62%) | DB: 0.00077 (4%) | 200 OK [http://mumoshu.com/kokodoko/scores/10]
+
+
+Processing ScoresController#index (for 120.74.217.175 at 2008-09-07 04:10:32) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOg1AcXVpenplczA6GEBjaGFuZ2VkX2F0dHJpYnV0
+ZXN7ADoMQHNjb3JlczA6FkBhdHRyaWJ1dGVzX2NhY2hlewA6EEBhdHRyaWJ1
+dGVzewoiD2NyZWF0ZWRfYXQiGDIwMDgtMDgtMDUgMTg6MDk6NDciD3VwZGF0
+ZWRfYXQiGDIwMDgtMDgtMDYgMTU6MTM6MjIiDW5pY2tuYW1lIhHjgoDjgoLj
+gZfjgoUiB2lkIgYxIhFpZGVudGl0eV91cmwiIWh0dHA6Ly9tdW1vc2h1Lm15
+b3BlbmlkLmNvbS86HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIkU2NvcmUgd2FzIHN1Y2Nl
+c3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7E1Q6C2p1bXB0bzA=--ab0365afe8bc78a639016e66f9ac258b2ff28f41
+  Parameters: {"action"=>"index", "controller"=>"scores", "quiz_id"=>"2"}
+  [4;36;1mQuiz Load (0.000319)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 2) [0m
+Rendering template within layouts/scores
+Rendering scores/index
+  [4;35;1mScore Load (0.001071)[0m   [0mSELECT * FROM "scores" WHERE ("scores".quiz_id = 2) [0m
+  [4;36;1mUser Load (0.000285)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 2.54846 (0 reqs/sec) | Rendering: 2.53717 (99%) | DB: 0.00167 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/2/scores]
+
+
+Processing QuizzesController#index (for 120.74.217.175 at 2008-09-07 04:10:40) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOg1AcXVpenplczA6GEBjaGFuZ2VkX2F0dHJp
+YnV0ZXN7ADoQQGF0dHJpYnV0ZXN7CiIPY3JlYXRlZF9hdCIYMjAwOC0wOC0w
+NSAxODowOTo0NyINbmlja25hbWUiEeOCgOOCguOBl+OChSIPdXBkYXRlZF9h
+dCIYMjAwOC0wOC0wNiAxNToxMzoyMiIHaWQiBjEiEWlkZW50aXR5X3VybCIh
+aHR0cDovL211bW9zaHUubXlvcGVuaWQuY29tLzoWQGF0dHJpYnV0ZXNfY2Fj
+aGV7ADoMQHNjb3JlczA6HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--31157cbcd4af35bab4ec13f3dba71eb8ae4b3160
+  Parameters: {"action"=>"index", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.001942)[0m   [0;1mSELECT * FROM "quizzes" [0m
+  [4;35;1mUser Load (0.000385)[0m   [0mSELECT * FROM "users" [0m
+Rendering quizzes/index
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00284)
+Completed in 0.02163 (46 reqs/sec) | Rendering: 0.00488 (22%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes]
+
+
+Processing UsersController#show (for 120.74.217.175 at 2008-09-07 04:15:51) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBzY29y
+ZXMwOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0cmlidXRlc3sKIg9jcmVh
+dGVkX2F0IhgyMDA4LTA4LTA1IDE4OjA5OjQ3Ig91cGRhdGVkX2F0IhgyMDA4
+LTA4LTA2IDE1OjEzOjIyIg1uaWNrbmFtZSIR44KA44KC44GX44KFIgdpZCIG
+MSIRaWRlbnRpdHlfdXJsIiFodHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20v
+OhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--98e779cf094500b0e4b9dc28fcae48b3feee6782
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000224)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mQuiz Load (0.000682)[0m   [0mSELECT * FROM "quizzes" WHERE ("quizzes"."user_id" = 1) [0m
+Rendering users/show
+  [4;36;1mSQL (0.000241)[0m   [0;1mSELECT count(*) AS count_all FROM "quizzes" WHERE ("quizzes".user_id = 1) [0m
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00285)
+Completed in 0.02073 (48 reqs/sec) | Rendering: 0.00485 (23%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/users/1]
+
+
+Processing QuizzesController#edit (for 120.74.217.175 at 2008-09-07 04:16:02) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOgxAc2NvcmVzMDoNQHF1aXp6ZXMwOhhAY2hh
+bmdlZF9hdHRyaWJ1dGVzewA6EEBhdHRyaWJ1dGVzewoiD2NyZWF0ZWRfYXQi
+GDIwMDgtMDgtMDUgMTg6MDk6NDciDW5pY2tuYW1lIhHjgoDjgoLjgZfjgoUi
+D3VwZGF0ZWRfYXQiGDIwMDgtMDgtMDYgMTU6MTM6MjIiB2lkIgYxIhFpZGVu
+dGl0eV91cmwiIWh0dHA6Ly9tdW1vc2h1Lm15b3BlbmlkLmNvbS86FkBhdHRy
+aWJ1dGVzX2NhY2hlewA6HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--3231d0fdfc0ed6f87ae95fb07428e530632fb7e2
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"quizzes"}
+  [4;36;1mQuiz Load (0.000318)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 1) [0m
+Rendering quizzes/edit
+Start rendering component ({:params=>{:quiz_id=>1}, :action=>"index", :controller=>"marks"}): 
+
+
+Processing MarksController#index (for 120.74.217.175 at 2008-09-07 04:16:02) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoMdXNlcl9pZG86CVVzZXIMOgxAc2NvcmVzMDoNQHF1aXp6ZXMwOhhAY2hh
+bmdlZF9hdHRyaWJ1dGVzewA6EEBhdHRyaWJ1dGVzewoiD2NyZWF0ZWRfYXQi
+GDIwMDgtMDgtMDUgMTg6MDk6NDciDW5pY2tuYW1lIhHjgoDjgoLjgZfjgoUi
+D3VwZGF0ZWRfYXQiGDIwMDgtMDgtMDYgMTU6MTM6MjIiB2lkIgYxIhFpZGVu
+dGl0eV91cmwiIWh0dHA6Ly9tdW1vc2h1Lm15b3BlbmlkLmNvbS86FkBhdHRy
+aWJ1dGVzX2NhY2hlewA6HEBuZXdfcmVjb3JkX2JlZm9yZV9zYXZlMDoMQGVy
+cm9yc286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzoKQGJhc2VACDsOewA6CXVz
+ZXJACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--3231d0fdfc0ed6f87ae95fb07428e530632fb7e2
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"marks", "quiz_id"=>1}
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 1) [0m
+Rendering marks/index
+  [4;36;1mMark Load (0.002916)[0m   [0;1mSELECT * FROM "marks" WHERE ("marks".quiz_id = 1) [0m
+Completed in 0.01744 (57 reqs/sec) | Rendering: 0.01043 (59%) | DB: 0.00292 (16%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/1/edit]
+
+
+End of component rendering
+Rendering nested layouts ["/layout"]
+Rendered _layout (0.00456)
+Completed in 0.04007 (24 reqs/sec) | Rendering: 0.00663 (16%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/1/edit]
+
+
+Processing MarksController#edit (for 120.74.217.175 at 2008-09-07 04:17:07) [GET]
+  Session ID: BAh7DCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwOgxjc3JmX2lkIiVkNGE3MzljNDU4MGUyMTNkNzM1ZjVmYmE3ZmM2YzYz
+MzoJdXNlcm86CVVzZXIMOhhAY2hhbmdlZF9hdHRyaWJ1dGVzewA6DEBzY29y
+ZXMwOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0cmlidXRlc3sKIg9jcmVh
+dGVkX2F0IhgyMDA4LTA4LTA1IDE4OjA5OjQ3Ig91cGRhdGVkX2F0IhgyMDA4
+LTA4LTA2IDE1OjEzOjIyIg1uaWNrbmFtZSIR44KA44KC44GX44KFIgdpZCIG
+MSIRaWRlbnRpdHlfdXJsIiFodHRwOi8vbXVtb3NodS5teW9wZW5pZC5jb20v
+OhxAbmV3X3JlY29yZF9iZWZvcmVfc2F2ZTA6DUBxdWl6emVzMDoMQGVycm9y
+c286GUFjdGl2ZVJlY29yZDo6RXJyb3JzBzsOewA6CkBiYXNlQAg6DHVzZXJf
+aWRACCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjowIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy
+OjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgtqdW1wdG8w--98e779cf094500b0e4b9dc28fcae48b3feee6782
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"marks", "quiz_id"=>"1"}
+  [4;36;1mQuiz Load (0.000354)[0m   [0;1mSELECT * FROM "quizzes" WHERE ("quizzes"."id" = 1) [0m
+  [4;35;1mMark Load (0.000285)[0m   [0mSELECT * FROM "marks" WHERE ("marks"."id" = 1 AND ("marks".quiz_id = 1)) [0m
+Rendering marks/edit
+Rendered marks/_edit_map (0.00002)
+Rendering nested layouts ["/layout", "/marks/layout"]
+Rendered marks/_layout (0.00010)
+Rendered _layout (0.00455)
+Completed in 0.05704 (17 reqs/sec) | Rendering: 0.00646 (11%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/kokodoko/quizzes/1/marks/1/edit]
