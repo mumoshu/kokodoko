@@ -23,6 +23,7 @@ a:hover {
 h1, h2, h3 {
 	margin:.8em 0 .2em 0;
 	padding:0;
+	border-bottom: 1px solid #EEEEEE;
 }
 p {
 	margin:.4em 0 .8em 0;

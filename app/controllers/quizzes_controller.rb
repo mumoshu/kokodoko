@@ -33,6 +33,10 @@ class QuizzesController < ApplicationController
   # GET /quizzes/new.xml
   def new
     @quiz = Quiz.new
+    @quiz.magnify_scale = 17
+    @quiz.normal_scale = 16
+    @quiz.demagnify_scale = 15
+    @quiz.num_questions = 10
 
     respond_to do |format|
       format.html # new.html.erb
@@ -54,7 +58,7 @@ class QuizzesController < ApplicationController
     respond_to do |format|
       if @quiz.save
         flash[:notice] = 'Quiz was successfully created.'
-        format.html { redirect_to(@quiz) }
+        format.html { redirect_to(edit_quiz_path(@quiz)) }
         format.xml  { render :xml => @quiz, :status => :created, :location => @quiz }
       else
         format.html { render :action => "new" }

@@ -3,20 +3,15 @@
 <% end %>
 
 <div style="padding:4px">
-<h2>投稿クイズ</h2>
-</div>
-
-<div>
-投稿クイズ数：<strong><%= @user.quizzes.size %></strong>件
+<h1>投稿クイズ</h1>
+<span style="font-size: 100%"><%= @user.quizzes.size %>件</span>
 </div>
 
 <table>
 <% for quiz in @quizzes %>
   <tr>
-    <th><%= link_to quiz.title, quiz %></th>
+    <td><%= link_to quiz.title, edit_quiz_path(quiz) %></td>
 <% if @user.id == session[:user_id].id %>
-    <td><%= link_to '問題一覧を見る', quiz_marks_path(quiz) %></td>
-    <td><%= link_to '編集', edit_quiz_path(quiz) %></td>
     <td><%= link_to '削除', quiz, :confirm => 'Are you sure?', :method => :delete %></td>
 <% end %>
   </tr>
@@ -25,7 +20,10 @@
 
 <br/>
 
-<div id="footer">
-<%= link_to 'ユーザ情報を変更する', edit_user_path(@user) %> |
-<%= link_to 'ユーザ一覧へ', users_path %>
+<h1>
+<% if @user.id == session[:user_id].id %>
+<%= link_to 'ニックネームを変える', edit_user_path(@user) %>
+<% end %>
+</h1>
+
 </div>
