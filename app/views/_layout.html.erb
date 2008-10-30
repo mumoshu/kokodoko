@@ -12,16 +12,73 @@
     <% end %>
   </title>
   <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag 'scriptaculos' %>
+  <%= javascript_include_tag 'slider' %>
+  <%= javascript_include_tag 'resizable' %>
+  <%= javascript_include_tag 'livepipe/livepipe' %>
+  <%= javascript_include_tag 'livepipe/window' %>
   <%= stylesheet_link_tag 'scaffold' %>
   <%= stylesheet_link_tag 'holy-grail-no-quirks-mode' %>
   <%= stylesheet_link_tag 'global_navi' %>
+  <%= stylesheet_link_tag 'livepipe/window' %>
   <%= @content_for_header %>
+  <script>
+document.observe('dom:loaded',function(){
+
+//styled examples use the window factory for a shared set of behavior
+var window_factory = function(container,options){
+var window_header = new Element('div',{
+className: 'window_header'
+});
+var window_title = new Element('div',{
+className: 'window_title'
+});
+var window_close = new Element('div',{
+className: 'window_close'
+});
+var window_contents = new Element('div',{
+className: 'window_contents'
+});
+var w = new Control.Window(container,Object.extend({
+className: 'window',
+closeOnClick: window_close,
+draggable: window_header,
+insertContentAt: window_contents,
+afterOpen: function(){
+window_title.update(container.readAttribute('title'))
+}
+},options || {}));
+w.container.insert(window_header);
+window_header.insert(window_title);
+window_header.insert(window_close);
+w.container.insert(window_contents);
+return w;
+};
+var styled_window_one = window_factory($('styled_window_one'));
+
+});
+  </script>
 </head>
 
 <% if @content_for_body %>
 <%= @content_for_body %>
 <% else %>
 <body>
+
+<a href="#login_form" id="styled_window_one" title="OpenIDでログイン">
+新ログインフォーム</a>
+
+<div id="login_form">
+<div id="window_content" style="margin-top: 20px">
+<% form_tag :controller => "login", :action => "login" do |f| %>
+<label for="open_url" >
+  OpenID URL:
+</label>
+<%= text_field_tag :openid_url, nil, {:size => "50"} %>
+<%= submit_tag "ログイン" %>
+<% end -%>
+</div>
+</div>
 
 <div id="header">
 <span style="font-size: 400%;font-weight: bold">ここどこ</span><span style="font-size: 300%;font-weight: normal"><%= "::#{@content_for_title}" if @content_for_title %></span>

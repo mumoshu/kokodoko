@@ -11,7 +11,7 @@
 <% for quiz in @quizzes %>
   <tr>
     <td><%= link_to quiz.title, edit_quiz_path(quiz) %></td>
-<% if @user.id == session[:user_id].id %>
+<% if session[:user] and @user.id == session[:user_id].id %>
     <td><%= link_to '削除', quiz, :confirm => 'Are you sure?', :method => :delete %></td>
 <% end %>
   </tr>
@@ -21,7 +21,7 @@
 <br/>
 
 <h1>
-<% if @user.id == session[:user_id].id %>
+<% if session[:user] and @user.id == session[:user_id].id %>
 <%= link_to 'ニックネームを変える', edit_user_path(@user) %>
 <% end %>
 </h1>
