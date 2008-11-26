@@ -12,5 +12,5 @@
   OpenID URL:
 </label>
 <%= text_field_tag :openid_url, nil, {:size => "50"} %>
-<%= submit_tag "ログイン" %>
+<%= submit_tag "ログイン", {:params => "lightwindow_form=login_form", :name => "lightwindow_action"} %>
 <% end -%>

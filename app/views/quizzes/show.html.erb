@@ -36,6 +36,31 @@
     quiz.num_questions = <%= @quiz.num_questions %>;
     quiz.view_type = "<%= @quiz.view_type %>";
 
+    document.observe('dom:loaded', function() {
+    var progress_bar = new Control.ProgressBar('progress_bar',{
+    interval: 0.15});
+
+//    jQuery("pbar").progressbar({
+//      interval: 2000
+//    });
+//    jQuery("pbar").progressbar("start");
+    
+//    var modal = new Control.Modal($('modal'),{
+//    overlayOpacity: 0.75,
+//    className: 'modal',
+//    fade: true
+//    });
+
+    var modal = Control.Modal.open($('modal_content'),{
+    closeOnClick: 'overlay',
+    overlayOpacity: 0.75,
+    fade: true
+    });
+
+    modal.observe('afterClose', progress_bar.start.bind(progress_bar));
+
+    });
+    
     //]]>
   </script>
 
@@ -43,6 +68,12 @@
 
 <% content_for :left do %>
 <% end %>
+
+<span>time: </span><div id="progress_bar"></div>  
+
+<div id="modal_content">
+<em>Click to Start</em>
+</div>
 
   <div id="quiz">
       <div id="pano" style="width: 500px; height: 300px"></div>

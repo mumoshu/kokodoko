@@ -52,3 +52,10 @@ a:hover { color: #fff; background-color:#000; }
   list-style: square;
 }
 
+#openid_url {
+  background: url(/kokodoko/images/openid.gif) no-repeat;
+  background-color: #fff;
+  background-position: 0 50%;
+  color: #000;
+  padding-left: 18px;
+}

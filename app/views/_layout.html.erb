@@ -15,16 +15,19 @@
   <%= javascript_include_tag 'scriptaculos' %>
   <%= javascript_include_tag 'slider' %>
   <%= javascript_include_tag 'resizable' %>
+  <%= javascript_include_tag 'lightwindow' %>
   <%= javascript_include_tag 'livepipe/livepipe' %>
   <%= javascript_include_tag 'livepipe/window' %>
+  <%= javascript_include_tag 'livepipe/progressbar' %>
   <%= stylesheet_link_tag 'scaffold' %>
   <%= stylesheet_link_tag 'holy-grail-no-quirks-mode' %>
   <%= stylesheet_link_tag 'global_navi' %>
   <%= stylesheet_link_tag 'livepipe/window' %>
+  <%= stylesheet_link_tag 'livepipe/progressbar' %>
+  <%= stylesheet_link_tag 'lightwindow' %>
   <%= @content_for_header %>
   <script>
 document.observe('dom:loaded',function(){
-
 //styled examples use the window factory for a shared set of behavior
 var window_factory = function(container,options){
 var window_header = new Element('div',{
@@ -66,17 +69,23 @@ var styled_window_one = window_factory($('styled_window_one'));
 <body>
 
 <a href="#login_form" id="styled_window_one" title="OpenIDでログイン">
-新ログインフォーム</a>
+OpenIdでログイン(Livepipe ver.)</a>
 
-<div id="login_form">
+<div id="login_form" style="display: none">
 <div id="window_content" style="margin-top: 20px">
+<p>
 <% form_tag :controller => "login", :action => "login" do |f| %>
+<p>
 <label for="open_url" >
-  OpenID URL:
+OpenID URL
 </label>
 <%= text_field_tag :openid_url, nil, {:size => "50"} %>
+</p>
+<p align="right" style="border-top: 1px dotted rgb(204, 204, 204); padding: 15px 30px 0px 0px;">
 <%= submit_tag "ログイン" %>
+</p>
 <% end -%>
+</p>
 </div>
 </div>
 
@@ -87,19 +96,19 @@ var styled_window_one = window_factory($('styled_window_one'));
 <% if session[:user] %>
 <td>ようこそ <strong><%= link_to session[:user].nickname, session[:user] %></strong> さん</td>
 <% else %>
-<td><%= link_to "OpenIDでログイン", :controller => "login", :action => "login" %>すると、クイズを投稿したり、得点ランキングに参加することができます。</td>
+<td><a href="#login_form" class="lightwindow">OpenIDでログイン</a>すると、クイズを投稿したり、得点ランキングに参加することができます。</td>
 <% end %>
 </tr>
 </table>
 <div id="navigation">
 <ul id="globalNavi">
-<li><%= link_to "*クイズを探す*", :controller => "quizzes", :action => "index" %></li>
-<li><%= link_to "*クイズを投稿する*", :controller => "quizzes", :action => "new" %></li>
+<li><%= link_to image_tag("fam/icons/find.png", {:style => "border: none; vertical-align: middle"}) + "クイズを探す", :controller => "quizzes", :action => "index" %></li>
+<li><%= link_to image_tag("fam/icons/map_edit.png", {:style => "border: none; vertical-align: middle"}) + "クイズを投稿する", :controller => "quizzes", :action => "new" %></li>
 <% if session[:user] %>
-<li><%= link_to "*マイページ*", session[:user] %></li>
-<li><%= link_to "*ログアウト*", :controller => "login", :action => "logout" %></li>
+<li><%= link_to image_tag("fam/icons/user.png", {:style => "border: none; vertical-align: middle"}) + "マイページ", session[:user] %></li>
+<li><%= link_to image_tag("fam/icons/cancel.png", {:style => "border: none; vertical-align: middle"}) + "ログアウト", :controller => "login", :action => "logout" %></li>
 <% else %>
-<li><%= link_to "*ログイン*", :controller => "login", :action => "login" %></li>
+<li><%= link_to image_tag("openid.gif", {:style => "border: none; vertical-align: middle"}) + "ログイン", "#login_form", {:class => "lightwindow"} %></li>
 <% end %>
 </ul>
 </div>

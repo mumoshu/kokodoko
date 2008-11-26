@@ -6,6 +6,7 @@ var street;
 var streetview_client;
 var ovewview;
 var marker;
+var spot_marker;
 
 Event.observe(window, "load", load, false);
 Event.observe(window, "unload", GUnload, false);
@@ -30,7 +31,6 @@ function shuffle(a) {
 
 function set_hint_latlng(point) {
     streetview_client.getNearestPanoramaLatLng(point,function(point) {
-//	hint.setLocationAndPOV(point,{});
 	marker.setLatLng(point);
 	open_hint_window(point);
     });
@@ -49,47 +49,65 @@ function open_hint_window(point) {
 }
 
 function quiz_init() {
-    var id;
-    var ids;
-    ids = new Array("map","ansmap","pano","answer","point","total","q_rest","hint");
-    while (id = ids.pop()) {
+    var ids = new Array("map","ansmap","pano","answer","point","total","q_rest","hint");
+    ids.each(function (id) {
 	quiz[id] = document.getElementById(id);
-    }
+    });
 
     map = new GMap2(quiz.map);
-    map.disableDragging();
     map.setMapType(G_SATELLITE_MAP);
+    map.enableScrollWheelZoom();
+    map.enableContinuousZoom();
+    map.addControl(new GLargeMapControl()); 
+
+    var set_icon_up = function(icon) {
+	icon.iconSize = new GSize(24,24);
+	icon.iconAnchor = new GPoint(12,12);
+	icon.infoWindowAnchor = new GPoint(12,4);
+    };
+    var spot_icon = new GIcon(null,"/kokodoko/images/fam/icons/exclamation.png");
+    var zoom_icon = new GIcon(null,"/kokodoko/images/fam/icons/zoom.png");
+    set_icon_up(spot_icon);
+    set_icon_up(zoom_icon);
+
     street = new GStreetviewOverlay();
 
     ansmap = new GMap2(quiz.ansmap);
     pano = new GStreetviewPanorama(quiz.pano);
-//    hint = new GStreetviewPanorama(quiz.hint);
 
     if (quiz.view_type == "street") quiz.map.style.display = "none";
     if (quiz.view_type == "satellite") quiz.pano.style.display = "none";
     quiz.ansmap.style.display = "none";
     quiz.hint.style.display = "none";
 
-    marker_opt = {};
-    marker_opt.title = "ヒント位置";
-    marker_opt.autoPan = true;
-    marker_opt.draggable = true;
-   
-    marker = new GMarker(new GLatLng(0,0),marker_opt);
+    marker = new GMarker(new GLatLng(0,0),{
+	title: "ヒント位置",
+	autoPan: false,
+	draggable: true,
+	icon: zoom_icon
+    });
+    spot_marker = new GMarker(new GLatLng(0,0),{
+	title: "ここどこ?",
+	autoPan: false,
+	draggable: false,
+	icon: spot_icon
+    });
 
     quiz.next_question();
-    
 
     GEvent.addListener(marker,'dragend',function() {
 	set_hint_latlng(marker.getLatLng());
     });
 
     map.addOverlay(marker);
+    map.addOverlay(spot_marker);
+
     streetview_client = new GStreetviewClient();
     GEvent.addListener(map,'click',function(overlay,point) {
 	set_hint_latlng(point);
 //	map.showMapBlowup(point, { "mapType": G_SATELLITE_MAP, "zoomLevel": 18})
     });
+
 //    GEvent.addListener(hint,'initialized',function(location) {
 //	marker.setLatLng(location.latlng);
 //    });
@@ -172,7 +190,7 @@ var quiz = {
 	this.current_question = this.questions[(this.current_count++) % this.questions.length];
 	if (this.view_type == "satellite") map.setCenter(this.current_question.latlng,16);
 	ansmap.setCenter(this.current_question.latlng,16);
-	marker.setLatLng(this.current_question.latlng);
+	spot_marker.setLatLng(this.current_question.latlng);
 	if (this.view_type == "street") pano.setLocationAndPOV(this.current_question.latlng,{});
 
         this.point.innerHTML = score.get_point();
