@@ -19,7 +19,6 @@
   <%= javascript_include_tag 'lightwindow' %>
   <%= javascript_include_tag 'livepipe/livepipe' %>
   <%= javascript_include_tag 'livepipe/window' %>
-  <%= javascript_include_tag 'livepipe/progressbar' %>
   <%= javascript_include_tag 'jsProgressBarHandler.js' %>
   <%= stylesheet_link_tag 'scaffold' %>
   <%= stylesheet_link_tag 'holy-grail-no-quirks-mode' %>
@@ -27,9 +26,22 @@
   <%= stylesheet_link_tag 'livepipe/window' %>
   <%= stylesheet_link_tag 'livepipe/progressbar' %>
   <%= stylesheet_link_tag 'lightwindow' %>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <link rel="stylesheet" href="http://dev.jquery.com/view/tags/ui/latest/themes/flora/flora.all.css" type="text/css" media="screen" title="Flora (Default)">
+  <script type="text/javascript" src="http://dev.jquery.com/view/tags/ui/latest/ui/ui.core.js"></script>
+  <script type="text/javascript" src="http://dev.jquery.com/view/tags/ui/latest/ui/ui.tabs.js"></script>
   <%= @content_for_header %>
   <script>
+    jQuery.noConflict();
 document.observe('dom:loaded',function(){
+    jQuery("#tabs > ul").tabs({
+      load: function(e, ui) {
+        jQuery('a', ui.panel).click(function() {
+          jQuery(ui.panel).load(this.href);
+           return false;
+        });
+      }
+    });
 //styled examples use the window factory for a shared set of behavior
 var window_factory = function(container,options){
 var window_header = new Element('div',{
@@ -70,9 +82,6 @@ var styled_window_one = window_factory($('styled_window_one'));
 <% else %>
 <body>
 
-<a href="#login_form" id="styled_window_one" title="OpenIDでログイン">
-OpenIdでログイン(Livepipe ver.)</a>
-
 <div id="login_form" style="display: none">
 <div id="window_content" style="margin-top: 20px">
 <p>
@@ -92,16 +101,14 @@ OpenID URL
 </div>
 
 <div id="header">
-<span style="font-size: 400%;font-weight: bold">ここどこ</span><span style="font-size: 300%;font-weight: normal"><%= "::#{@content_for_title}" if @content_for_title %></span>
-<table height="34" cellpadding="4" style="color:#666">
-<tr>
+<span style="font-size: 400%;font-weight: bold">ここどこ</span>
+<span height="34" cellpadding="4" style="color:#666">
 <% if session[:user] %>
-<td>ようこそ <strong><%= link_to session[:user].nickname, session[:user] %></strong> さん</td>
+　ようこそ <strong><%= link_to session[:user].nickname, session[:user] %></strong> さん
 <% else %>
-<td><a href="#login_form" class="lightwindow">OpenIDでログイン</a>すると、クイズを投稿したり、得点ランキングに参加することができます。</td>
+<a href="#login_form" class="lightwindow">OpenIDでログイン</a>すると、クイズを投稿したり、得点ランキングに参加することができます。
 <% end %>
-</tr>
-</table>
+</span>
 <div id="navigation">
 <ul id="globalNavi">
 <li><%= link_to image_tag("fam/icons/find.png", {:style => "border: none; vertical-align: middle"}) + "クイズを探す", :controller => "quizzes", :action => "index" %></li>
@@ -114,6 +121,20 @@ OpenID URL
 <% end %>
 </ul>
 </div>
+
+<div id="tabs" class="flora">
+<ul>
+<li><%= link_to "<span>クイズを探す</span>", :controller => "quizzes", :action => "index" %></li>
+<li><%= link_to "<span>投稿する</span>", :controller => "quizzes", :action => "new" %></li>
+<% if session[:user] %>
+<li><%= link_to "<span>マイページ</span>", session[:user] %></li>
+<li><%= link_to "<span>ログアウト</span>", :controller => "login", :action => "logout" %></li>
+<% else %>
+<li><%= link_to "<span>ログインLogin</span>", "#login_form", {:class => "lightwindow"} %></li>
+<% end %>
+</ul>
+</div>
+
 </div>
 
 <p style="color: green"><%= flash[:notice] %></p>
