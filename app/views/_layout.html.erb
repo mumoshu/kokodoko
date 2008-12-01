@@ -22,10 +22,11 @@
   <%= javascript_include_tag 'jsProgressBarHandler.js' %>
   <%= stylesheet_link_tag 'scaffold' %>
   <%= stylesheet_link_tag 'holy-grail-no-quirks-mode' %>
-  <%= stylesheet_link_tag 'global_navi' %>
+  <%= stylesheet_link_tag 'navi_right' %>
   <%= stylesheet_link_tag 'livepipe/window' %>
   <%= stylesheet_link_tag 'livepipe/progressbar' %>
   <%= stylesheet_link_tag 'lightwindow' %>
+  <%= stylesheet_link_tag '2-class.css' %>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.2/jquery-ui.min.js"></script>
   <%= javascript_include_tag 'jquery.navi.js' %>
@@ -34,10 +35,37 @@
 <script src="http://www.google.com/uds/api?file=uds.js&v=1.0&key=<%= @key %>" type="text/javascript"></script>
 <script src="http://www.google.com/uds/solutions/localsearch/gmlocalsearch.js" type="text/javascript"></script>
 
+  <%= javascript_include_tag 'jquery.horizontal_menu_with_separators.js' %>
+  <%= stylesheet_link_tag 'horizontal_menu_with_separators' %>
+
+
+<style type="text/css">
+  body {
+    width: 800px;
+    margin: 0em auto;
+  }
+  #title {
+    font-size: 200%;
+    font-weight: bold;
+  }
+  #subtitle {
+    height: 34;
+    font-size: 80%;
+    color:#666;
+    float: left;
+  }
+  #header {
+  }
+  #navi {
+    float: right;
+  }
+</style>
+
   <script>
     jQuery.noConflict();
 document.observe('dom:loaded',function(){
-    jQuery("#navi > ul").navi();
+    jQuery("#navi > ul").horizontal_menu_with_separators();
+//    jQuery("#navi > ul").navi();
 //    jQuery("#tabs > ul").tabs();
 //    jQuery("#tabs > ul").tabs({
 //      load: function(e, ui) {
@@ -108,8 +136,8 @@ OpenID URL
 </div>
 
 <div id="header">
-<div style="font-size: 400%;font-weight: bold">ここどこ</div>
-<div height="34" cellpadding="4" style="color:#666">
+<div id="title">ここどこ</div>
+<div id="subtitle">
 <% if session[:user] %>
 　ようこそ <strong><%= link_to session[:user].nickname, session[:user] %></strong> さん
 <% else %>

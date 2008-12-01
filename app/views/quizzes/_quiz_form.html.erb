@@ -1,0 +1,35 @@
+<div id="quiz_form">
+<h2>クイズについて</h2>
+
+<% form_for(@quiz) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title, "タイトル" %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :num_questions, "問題数" %><br />
+    <%= f.text_field :num_questions %>
+  </p>
+  <p>
+    <%= f.label :magnify_scale, "地図の縮尺（拡大）" %><br />
+    <%= f.text_field :magnify_scale %>
+  </p>
+  <p>
+    <%= f.label :normal_scale, "地図の縮尺（通常）" %><br />
+    <%= f.text_field :normal_scale %>
+  </p>
+  <p>
+    <%= f.label :demagnify_scale, "地図の縮尺（縮小）" %><br />
+    <%= f.text_field :demagnify_scale %>
+  </p>
+  <p>
+    <%= f.label :view_type, "出題形式（地図の種類）" %><br />
+    <%= f.select :view_type, [ %w(衛星写真 satellite), %w(ストリートビュー street) ] %>
+  </p>
+  <p>
+    <%= f.submit "OK" %>
+  </p>
+<% end %>
+</div>

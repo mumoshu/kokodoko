@@ -4,9 +4,13 @@
 
 <h2>注目</h2>
 
-<% for quiz in @quizzes.sort_by {|q| - q.num_accesses } %>
-<span><%= link_to quiz.title, quiz %> (<%= quiz.num_accesses %>)</span>
+<ul class="tagCloud12">
+<% max_accesses = @quizzes.map {|q| q.num_accesses }.max + 1 %>
+<% for quiz in @quizzes %>
+<li class="level<%= 7 - (quiz.num_accesses.to_f / max_accesses * 6 + 1).to_i %>">
+<%= link_to quiz.title, quiz %></li>
 <% end %>
+</ul>
 
 <h2>人気</h2>
 
