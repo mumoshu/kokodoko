@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/*-----------------------------
+	Global Navigation
+-------------------------------*/
+
+ul.horizontal_menu_with_separators {
+  font_size: 90%;
+  _height: 1.5em; /* IE6用。祖先要素に幅や高さが指定していれば必要ないので，今回のサンプルではなくても問題なし。*/
+}
+
+ul.horizontal_menu_with_separators li.rest {
+  border-left: 1px solid #000000; /* 区切り線 */
+  padding: 0 10px;
+  display: inline; /* 横並びにさせる */
+}
+
+ul.horizontal_menu_with_separators li.first {
+  padding: 0 10px;
+  display: inline; /* 横並びにさせる */
+}
+
+ul.horizontal_menu_with_separators li a {
+  text-decoration: none;
+}

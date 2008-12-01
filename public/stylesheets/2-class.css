@@ -1,0 +1,1069 @@
+@charset "utf-8";
+
+/*
+*	※Licence: CC3.0 
+*	http://creativecommons.org/licenses/by/3.0/deed.ja
+*
+*	Title: Origin - Class
+*	URI: http://vicuna.jp/
+*	Author: wu
+*/
+
+div#main ul.tagCloud {
+	margin-bottom: 3em;
+}
+
+
+ul.tagCloud {
+	line-height: 1.4;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul.tagCloud li {
+	line-height: 1;
+	letter-spacing: 0;
+}
+
+ul.tagCloud li a {
+	line-height: 1;
+}
+
+/*--------------------------------------
+	Tag Cloud1
+---------------------------------------*/
+
+ul.tagCloud1 {
+	marin: 0;
+	padding: 0.5em 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+ul.tagCloud1 li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%; /* ここで相対的に文字サイズを変更 */
+}
+
+ul.tagCloud1 li a {
+	text-decoration: none;
+}
+
+/* タグレベル1～6 */
+
+ul.tagCloud1 li.level1 a {
+	font-size: 167%;
+	font-weight: bold;
+	color: #424242;
+}
+
+ul.tagCloud1 li.level2 a {
+	font-size: 136%;
+	font-weight: bold;
+	color: #5e5e5e;
+}
+
+ul.tagCloud1 li.level3 a {
+	font-size: 122%;
+	font-weight: bold;
+	color: #7a7a7a;
+}
+
+ul.tagCloud1 li.level4 a {
+	font-size: 114%;
+	color: #979797;
+}
+
+ul.tagCloud1 li.level5 a {
+	font-size: 92%;
+	color: #b3b3b3;
+}
+
+ul.tagCloud1 li.level6 a {
+	font-size: 77%;
+	color: #cfcfcf;
+}
+
+/* オンマウス */
+ul.tagCloud1 li a:hover {
+	color: #000;
+}
+
+
+
+
+
+
+
+/*--------------------------------------
+	Tag Cloud2
+---------------------------------------*/
+
+ul.tagCloud2 {
+	marin: 0;
+	padding: 0.5em 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+ul.tagCloud2 li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%; /* ここで相対的に文字サイズを変更 */
+}
+
+ul.tagCloud2 li a {
+	text-decoration: none;
+}
+
+/* タグレベル1～6 */
+
+ul.tagCloud2 li.level1 a {
+	font-size: 167%;
+	font-weight: bold;
+	color: #88261a;
+}
+
+ul.tagCloud2 li.level2 a {
+	font-size: 136%;
+	font-weight: bold;
+	color: #c24b46;
+}
+
+ul.tagCloud2 li.level3 a {
+	font-size: 122%;
+	font-weight: bold;
+	color: #bc6950;
+}
+
+ul.tagCloud2 li.level4 a {
+	font-size: 114%;
+	color: #be8776;
+}
+
+ul.tagCloud2 li.level5 a {
+	font-size: 92%;
+	color: #d2b298;
+}
+
+ul.tagCloud2 li.level6 a {
+	font-size: 77%;
+	color: #d1c4c0;
+}
+
+/* オンマウス色 */
+ul.tagCloud2 li a:hover {
+	color: #000;
+}
+
+
+
+/*--------------------------------------
+	Tag Cloud3
+---------------------------------------*/
+
+ul.tagCloud3 {
+	marin: 0;
+	padding: 0.5em 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+ul.tagCloud3 li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%; /* ここで相対的に文字サイズを変更 */
+}
+
+ul.tagCloud3 li a {
+	text-decoration: none;
+}
+
+/* タグレベル1～6 */
+
+ul.tagCloud3 li.level1 a {
+	font-size: 167%;
+	font-weight: bold;
+	color: #3d881a;
+}
+
+ul.tagCloud3 li.level2 a {
+	font-size: 136%;
+	font-weight: bold;
+	color: #76c246;
+}
+
+ul.tagCloud3 li.level3 a {
+	font-size: 122%;
+	font-weight: bold;
+	color: #66bc50;
+}
+
+ul.tagCloud3 li.level4 a {
+	font-size: 114%;
+	color: #84be76;
+}
+
+ul.tagCloud3 li.level5 a {
+	font-size: 92%;
+	color: #98d299;
+}
+
+ul.tagCloud3 li.level6 a {
+	font-size: 77%;
+	color: #c3d1c0;
+}
+
+/* オンマウス色 */
+ul.tagCloud3 li a:hover {
+	color: #000;
+}
+
+
+
+
+
+/*--------------------------------------
+	Tag Cloud4
+---------------------------------------*/
+
+ul.tagCloud4 {
+	marin: 0;
+	padding: 0.5em 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+ul.tagCloud4 li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%; /* ここで相対的に文字サイズを変更 */
+}
+
+ul.tagCloud4 li a {
+	text-decoration: none;
+}
+
+/* タグレベル1～6 */
+
+ul.tagCloud4 li.level1 a {
+	font-size: 167%;
+	font-weight: bold;
+	color: #3e5b71;
+}
+
+ul.tagCloud4 li.level2 a {
+	font-size: 136%;
+	font-weight: bold;
+	color: #668eac;
+}
+
+ul.tagCloud4 li.level3 a {
+	font-size: 122%;
+	font-weight: bold;
+	color: #668eac;
+}
+
+ul.tagCloud4 li.level4 a {
+	font-size: 114%;
+	color: #87a6be;
+}
+
+ul.tagCloud4 li.level5 a {
+	font-size: 92%;
+	color: #a7becf;
+}
+
+ul.tagCloud4 li.level6 a {
+	font-size: 77%;
+	color: #c7d5e0;
+}
+
+/* オンマウス色 */
+ul.tagCloud4 li a:hover {
+	color: #000;
+}
+
+
+/*--------------------------------------
+	Tag Cloud5
+---------------------------------------*/
+
+ul.tagCloud5 {
+	marin: 0;
+	padding: 0.5em 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+ul.tagCloud5 li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%; /* ここで相対的に文字サイズを変更 */
+}
+
+ul.tagCloud5 li a {
+	text-decoration: none;
+}
+
+/* タグレベル1～6 */
+
+ul.tagCloud5 li.level1 a {
+	font-size: 167%;
+	font-weight: bold;
+	color: #760e3b;
+}
+
+ul.tagCloud5 li.level2 a {
+	font-size: 136%;
+	font-weight: bold;
+	color: #a81454;
+}
+
+ul.tagCloud5 li.level3 a {
+	font-size: 122%;
+	font-weight: bold;
+	color: #db1a6d;
+}
+
+ul.tagCloud5 li.level4 a {
+	font-size: 114%;
+	color: #e9458c;
+}
+
+ul.tagCloud5 li.level5 a {
+	font-size: 92%;
+	color: #ef77ab;
+}
+
+ul.tagCloud5 li.level6 a {
+	font-size: 77%;
+	color: #f5aaca;
+}
+
+/* オンマウス色 */
+
+ul.tagCloud5 li a:hover {
+	color: #000;
+}
+
+/*--------------------------------------
+	Tag Cloud6
+---------------------------------------*/
+
+ul.tagCloud6 {
+	marin: 0;
+	padding: 0.5em 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+ul.tagCloud6 li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%; /* ここで相対的に文字サイズを変更 */
+}
+
+ul.tagCloud6 li a {
+	text-decoration: none;
+}
+
+/* タグレベル1～6 */
+
+ul.tagCloud6 li.level1 a {
+	font-size: 167%;
+	color: #db00aa;
+	font-weight: bold;
+}
+
+ul.tagCloud6 li.level2 a {
+	font-size: 136%;
+	color: #e771b4;
+	font-weight: bold;
+}
+
+ul.tagCloud6 li.level3 a {
+	font-size: 122%;
+	color: #bf79b5;
+}
+
+ul.tagCloud6 li.level4 a {
+	font-size: 114%;
+	color: #a57c9d;
+}
+
+ul.tagCloud6 li.level5 a {
+	font-size: 92%;
+	color: #897c9d;
+}
+
+ul.tagCloud6 li.level6 a {
+	font-size: 77%;
+	color: #567d9d;
+}
+
+/* オンマウス色 */
+ul.tagCloud6 li a:hover {
+	color: #000;
+}
+
+
+
+
+/*--------------------------------------
+	Tag Cloud7
+---------------------------------------*/
+
+ul.tagCloud7 {
+	marin: 0;
+	padding: 0.5em 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+ul.tagCloud7 li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%; /* ここで相対的に文字サイズを変更 */
+}
+
+ul.tagCloud7 li a {
+	text-decoration: none;
+}
+
+/* タグレベル1～6 */
+
+ul.tagCloud7 li.level1 a {
+	font-size: 167%;
+	font-weight: bold;
+	color: #01f098;
+}
+
+ul.tagCloud7 li.level2 a {
+	font-size: 136%;
+	font-weight: bold;
+	color: #01ddd5;
+}
+
+ul.tagCloud7 li.level3 a {
+	font-size: 122%;
+	font-weight: bold;
+	color: #2300a7;
+}
+
+ul.tagCloud7 li.level4 a {
+	font-size: 114%;
+	color: #2300a7;
+}
+
+ul.tagCloud7 li.level5 a {
+	font-size: 92%;
+	color: #4d007d;
+}
+
+ul.tagCloud7 li.level6 a {
+	font-size: 77%;
+	color: #32004f;
+}
+
+/* オンマウス色 */
+ul.tagCloud7 li a:hover {
+	color: #000;
+}
+
+
+
+
+/*--------------------------------------
+	Tag Cloud8
+---------------------------------------*/
+
+ul.tagCloud8 {
+	marin: 0;
+	padding: 0.5em 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+ul.tagCloud8 li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%; /* ここで相対的に文字サイズを変更 */
+}
+
+ul.tagCloud8 li a {
+	text-decoration: none;
+}
+
+/* タグレベル1～6 */
+
+ul.tagCloud8 li.level1 a {
+	font-size: 167%;
+	font-weight: bold;
+	color: #f30871;
+}
+
+ul.tagCloud8 li.level2 a {
+	font-size: 136%;
+	font-weight: bold;
+	color: #e50d11;
+}
+
+ul.tagCloud8 li.level3 a {
+	font-size: 122%;
+	font-weight: bold;
+	color: #da2f10;
+}
+
+ul.tagCloud8 li.level4 a {
+	font-size: 114%;
+	color: #d15c15;
+}
+
+ul.tagCloud8 li.level5 a {
+	font-size: 92%;
+	color: #c58f1b;
+}
+
+ul.tagCloud8 li.level6 a {
+	font-size: 77%;
+	color: #b7ba0a;
+}
+
+/* オンマウス色 */
+ul.tagCloud8 li a:hover {
+	color: #000;
+}
+
+/*--------------------------------------
+	Tag Cloud9
+---------------------------------------*/
+
+ul.tagCloud9 {
+	marin: 0;
+	padding: 0.5em 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+ul.tagCloud9 li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%; /* ここで相対的に文字サイズを変更 */
+}
+
+ul.tagCloud9 li a {
+	text-decoration: none;
+}
+
+/* タグレベル1～6 */
+
+ul.tagCloud9 li.level1 a {
+	font-size: 167%;
+	font-weight: bold;
+	color: #dc5f1f;
+}
+
+ul.tagCloud9 li.level2 a {
+	font-size: 136%;
+	font-weight: bold;
+	color: #d0a722;
+}
+
+ul.tagCloud9 li.level3 a {
+	font-size: 122%;
+	font-weight: bold;
+	color: #c7bd24;
+}
+
+ul.tagCloud9 li.level4 a {
+	font-size: 114%;
+	color: #a6bf28;
+}
+
+ul.tagCloud9 li.level5 a {
+	font-size: 92%;
+	color: #75b52c;
+}
+
+ul.tagCloud9 li.level6 a {
+	font-size: 77%;
+	color: #75b52c;
+}
+
+/* オンマウス色 */
+ul.tagCloud9 li a:hover {
+	color: #000;
+}
+
+/*--------------------------------------
+	Tag Cloud10
+---------------------------------------*/
+
+ul.tagCloud10 {
+	marin: 0;
+	padding: 0.5em 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+ul.tagCloud10 li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%; /* ここで相対的に文字サイズを変更 */
+}
+
+ul.tagCloud10 li a {
+	padding: 0 5px;
+	position: relative;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #eee;
+}
+
+ul.tagCloud10 li.level1 a {
+	z-index: 6;
+	font-size: 167%;
+	color: #424242;
+}
+
+ul.tagCloud10 li.level2 a {
+	top: 5px;
+	z-index: 5;
+	font-size: 136%;
+	color: #5e5e5e;
+}
+
+ul.tagCloud10 li.level3 a {
+	font-size: 114%;
+	color: #7a7a7a;
+	z-index: 4;
+}
+
+ul.tagCloud10 li.level4 a {
+	top: 5px;
+	z-index: 3;
+	font-size: 100%;
+	color: #979797;
+}
+
+ul.tagCloud10 li.level5 a {
+	font-size: 85%;
+	color: #b3b3b3;
+	z-index: 2;
+}
+
+ul.tagCloud10 li.level6 a {
+	z-index: 1;
+	font-size: 70%;
+	color: #cfcfcf;
+}
+
+/* オンマウス */
+ul.tagCloud10 li a:hover {
+	border-color: #666;
+	z-index: 10;
+	color: #000;
+	background-color: #eee;
+}
+
+/*--------------------------------------
+	Tag Cloud11
+---------------------------------------*/
+
+ul.tagCloud11 {
+	marin: 0;
+	padding: 0.5em 10px;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	background-image: url(../bg_tagCloud.gif);
+	background-position: 10px right;
+}
+
+ul.tagCloud11 li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%; /* ここで相対的に文字サイズを変更 */
+}
+
+ul.tagCloud11 li a {
+	padding: 0 5px;
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+	background-color: #fff;
+	border: 1px solid #e2edb5;
+}
+
+ul.tagCloud11 li.level1 a {
+	z-index: 6;
+	font-size: 167%;
+	background-color: #b5d246;
+}
+
+ul.tagCloud11 li.level2 a {
+	top: 5px;
+	z-index: 5;
+	font-size: 136%;
+	background-color: #c0d860;
+}
+
+ul.tagCloud11 li.level3 a {
+	z-index: 4;
+	font-size: 114%;
+	background-color: #cbe07d;
+}
+
+ul.tagCloud11 li.level4 a {
+	top: 5px;
+	z-index: 3;
+	font-size: 100%;
+	background-color: #d6e699;
+}
+
+ul.tagCloud11 li.level5 a {
+	z-index: 2;
+	font-size: 85%;
+	background-color: #e2edb5;
+}
+
+ul.tagCloud11 li.level6 a {
+	z-index: 1;
+	font-size: 70%;
+	background-color: #edf4d0;
+}
+
+/* オンマウス */
+ul.tagCloud11 li a:hover {
+	z-index: 10;
+	border-color: #a2ba42;
+	background-color: #b4cc54;
+}
+
+
+/*--------------------------------------
+	Tag Cloud12
+---------------------------------------*/
+
+ul.tagCloud12 {
+	marin: 0;
+	padding: 0.5em 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+ul.tagCloud12 li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%; /* ここで相対的に文字サイズを変更 */
+}
+
+ul.tagCloud12 li a {
+	padding: 0 5px;
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+	background-color: #fff;
+}
+
+ul.tagCloud12 li.level1 a {
+	z-index: 6;
+	font-size: 167%;
+	background-color: #6897af;
+}
+
+ul.tagCloud12 li.level2 a {
+	top: 5px;
+	z-index: 5;
+	font-size: 136%;
+	background-color: #7ea6ba;
+}
+
+ul.tagCloud12 li.level3 a {
+	z-index: 4;
+	font-size: 114%;
+	background-color: #95b6c7;
+}
+
+ul.tagCloud12 li.level4 a {
+	top: 5px;
+	z-index: 3;
+	font-size: 100%;
+	background-color: #acc6d3;
+}
+
+ul.tagCloud12 li.level5 a {
+	z-index: 2;
+	font-size: 85%;
+	background-color: #c3d6df;
+}
+
+ul.tagCloud12 li.level6 a {
+	z-index: 1;
+	font-size: 70%;
+	background-color: #d9e5eb;
+}
+
+/* オンマウス */
+
+ul.tagCloud12 li a:hover {
+	z-index: 10;
+	background-color: #5a89a1;
+}
+
+
+/*--------------------------------------
+	Tag Cloud13
+---------------------------------------*/
+
+ul.tagCloud13 {
+	marin: 0;
+	padding: 0.5em 10px;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+ul.tagCloud13 li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%; /* ここで相対的に文字サイズを変更 */
+}
+
+ul.tagCloud13 li a {
+	padding: 0 5px;
+	border-width: 1px;
+	border-style: solid;
+	position: relative;
+	text-decoration: none;
+	background-color: #fff;
+}
+
+ul.tagCloud13 li.level1 a {
+	border-color: #df28ac;
+	z-index: 6;
+	font-size: 167%;
+	font-weight: bold;
+	color: #df28ac;
+}
+
+ul.tagCloud13 li.level2 a {
+	border-color: #eb79b5;
+	top: 5px;
+	z-index: 5;
+	font-size: 136%;
+	font-weight: bold;
+	color: #eb79b5;
+}
+
+ul.tagCloud13 li.level3 a {
+	border-color: #c27fb7;
+	z-index: 4;
+	font-size: 114%;
+	color: #c27fb7;
+}
+
+ul.tagCloud13 li.level4 a {
+	border-color: #a77f9f;
+	top: 5px;
+	z-index: 3;
+	font-size: 100%;
+	color: #a77f9f;
+}
+
+ul.tagCloud13 li.level5 a {
+	border-color: #8a7f9f;
+	z-index: 2;
+	font-size: 85%;
+	color: #8a7f9f;
+}
+
+ul.tagCloud13 li.level6 a {
+	border-color: #507f9f;
+	z-index: 1;
+	font-size: 70%;
+	color: #507f9f;
+}
+
+/* オンマウス */
+ul.tagCloud13 li a:hover {
+	border-color: #fff;
+	z-index: 10;
+	color: #fff;
+	background-color: #cc0063;
+}
+
+/*--------------------------------------
+	.admin
+---------------------------------------*/
+
+.admin a {
+	padding: 0 10px 0 25px;
+	text-decoration: none;
+	color: #f65472;
+	background: url(images/mark/icon_edit.gif) 5px 3px no-repeat;
+}
+
+.admin a:hover {
+	color: #953844;
+}
+
+/*--------------------------------------
+	.pager* (ページ分割)
+---------------------------------------*/
+
+/*	ul.pager (Newer|Older)
+-----------------------------*/
+
+ul.pager {
+	text-align: center;
+}
+
+ul.pager li {
+	display: inline;
+}
+
+ul.pager li.newer:before {
+	content: "<< ";
+}
+
+ul.pager li.older:after {
+	content: " >>";
+}
+
+/*	p.pagerNum (1|2|3|4)
+-----------------------------*/
+
+p.pagerNum {
+	text-align: center;
+}
+
+p.pagerNum a {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+p.pagerNum strong {
+}
+
+/*--------------------------------------
+	.count
+---------------------------------------*/
+
+.count {
+	color: #000;
+}
+
+/*--------------------------------------
+	.feed
+---------------------------------------*/
+
+li.atom,
+li.rss {
+	margin-left: 5px!important;
+	list-style-type: none;
+}
+
+li.atom a,
+li.rss a {
+	padding-left: 20px;
+	background-image: url(images/mark/icon_feed.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0.1em;
+}
+
+/*--------------------------------------
+	dl.data
+---------------------------------------*/
+
+dl.data {
+	padding: 0;
+	border-left: 5px solid #ddd;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee!important;
+}
+
+dl.data dt {
+	margin: 0;
+	padding: 0.3em 0 0.1em 1em;
+	border-top: 1px solid #eee;
+	width: 8em;
+	float: left;
+	color: #333;
+}
+
+dl.data dd {
+	margin: 0 0 0 8em;
+	padding: 0.3em 1em;
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+	color: #999;
+}
+
+/*--------------------------------------
+	float
+---------------------------------------*/
+
+.img_L {
+	margin-right: 1em!important;
+	margin-top: 1em!important;
+	float: left;
+}
+
+.img_R {
+	margin-left: 1em!important;
+	margin-top: 1em!important;
+	float: right;
+}
+
+.clear {
+	display: block;
+	clear: both;
+}
+
+/*--------------------------------------
+	clearFix
+---------------------------------------*/
+
+ul#globalNavi,
+div#utilities,
+.textBody,
+ul.flip {
+	_height: 1px;
+	min-height: 1px;
+}
+
+ul#globalNavi:after,
+div#utilities:after,
+.textBody:after,
+ul.flip:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+/* for MacIE5 \*//*/
+ul#globalNavi,
+div#utilities,
+.textBody,
+ul.flip {
+	height: auto;
+	overflow: hidden;
+}
+/* end */
