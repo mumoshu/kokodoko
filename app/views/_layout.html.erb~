@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -12,9 +13,70 @@
     <% end %>
   </title>
   <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag 'scriptaculos' %>
+  <%= javascript_include_tag 'slider' %>
+  <%= javascript_include_tag 'resizable' %>
+  <%= javascript_include_tag 'lightwindow' %>
+  <%= javascript_include_tag 'livepipe/livepipe' %>
+  <%= javascript_include_tag 'livepipe/window' %>
+  <%= javascript_include_tag 'jsProgressBarHandler.js' %>
   <%= stylesheet_link_tag 'scaffold' %>
   <%= stylesheet_link_tag 'holy-grail-no-quirks-mode' %>
+  <%= stylesheet_link_tag 'global_navi' %>
+  <%= stylesheet_link_tag 'livepipe/window' %>
+  <%= stylesheet_link_tag 'livepipe/progressbar' %>
+  <%= stylesheet_link_tag 'lightwindow' %>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <link rel="stylesheet" href="http://dev.jquery.com/view/tags/ui/latest/themes/flora/flora.all.css" type="text/css" media="screen" title="Flora (Default)">
+  <script type="text/javascript" src="http://dev.jquery.com/view/tags/ui/latest/ui/ui.core.js"></script>
+  <script type="text/javascript" src="http://dev.jquery.com/view/tags/ui/latest/ui/ui.tabs.js"></script>
+  <script>
+    jQuery.noConflict();
+document.observe('dom:loaded',function(){
+    jQuery("#tabs > ul").tabs();
+//    jQuery("#tabs > ul").tabs({
+//      load: function(e, ui) {
+//        jQuery('a', ui.panel).click(function() {
+//          jQuery(ui.panel).load(this.href);
+//           return false;
+//        });
+//      }
+//    });
+//styled examples use the window factory for a shared set of behavior
+var window_factory = function(container,options){
+var window_header = new Element('div',{
+className: 'window_header'
+});
+var window_title = new Element('div',{
+className: 'window_title'
+});
+var window_close = new Element('div',{
+className: 'window_close'
+});
+var window_contents = new Element('div',{
+className: 'window_contents'
+});
+var w = new Control.Window(container,Object.extend({
+className: 'window',
+closeOnClick: window_close,
+draggable: window_header,
+insertContentAt: window_contents,
+afterOpen: function(){
+window_title.update(container.readAttribute('title'))
+}
+},options || {}));
+w.container.insert(window_header);
+window_header.insert(window_title);
+window_header.insert(window_close);
+w.container.insert(window_contents);
+return w;
+};
+var styled_window_one = window_factory($('styled_window_one'));
+
+});
+  </script>
   <%= @content_for_header %>
+
 </head>
 
 <% if @content_for_body %>
@@ -22,43 +84,78 @@
 <% else %>
 <body>
 
-<div id="header">
-<h1>
-ここどこ
-</h1>
-<table height="34" cellpadding="4" style="color:#666">
-<tr>
-<% if session[:user] %>
-<td>ようこそ <strong><%= link_to session[:user].nickname, session[:user] %></strong> さん</td>
-<% else %>
-<td><%= link_to "OpenIDでログイン", :controller => "login", :action => "login" %>すると、クイズを投稿したり、得点ランキングに参加することができます。</td>
-<% end %>
-</tr>
-</table>
-<div id="navigation">
-<%= link_to "クイズを探す", :controller => "quizzes", :action => "index" %> |
-<%= link_to "クイズを投稿する", :controller => "quizzes", :action => "new" %> |
-<%= link_to "ログアウト", :controller => "login", :action => "logout" %>
+<div id="login_form" style="display: none">
+<div id="window_content" style="margin-top: 20px">
+<p>
+<% form_tag :controller => "login", :action => "login" do |f| %>
+<p>
+<label for="open_url" >
+OpenID URL
+</label>
+<%= text_field_tag :openid_url, nil, {:size => "50"} %>
+</p>
+<p align="right" style="border-top: 1px dotted rgb(204, 204, 204); padding: 15px 30px 0px 0px;">
+<%= submit_tag "ログイン" %>
+</p>
+<% end -%>
+</p>
 </div>
+</div>
+
+<div id="header">
+<span style="font-size: 400%;font-weight: bold">ここどこ</span>
+<span height="34" cellpadding="4" style="color:#666">
+<% if session[:user] %>
+　ようこそ <strong><%= link_to session[:user].nickname, session[:user] %></strong> さん
+<% else %>
+<a href="#login_form" class="lightwindow">OpenIDでログイン</a>すると、クイズを投稿したり、得点ランキングに参加することができます。
+<% end %>
+</span>
+<div id="navigation">
+<ul id="globalNavi">
+<li><%= link_to image_tag("fam/icons/find.png", {:style => "border: none; vertical-align: middle"}) + "クイズを探す", :controller => "quizzes", :action => "index" %></li>
+<li><%= link_to image_tag("fam/icons/map_edit.png", {:style => "border: none; vertical-align: middle"}) + "クイズを投稿する", :controller => "quizzes", :action => "new" %></li>
+<% if session[:user] %>
+<li><%= link_to image_tag("fam/icons/user.png", {:style => "border: none; vertical-align: middle"}) + "マイページ", session[:user] %></li>
+<li><%= link_to image_tag("fam/icons/cancel.png", {:style => "border: none; vertical-align: middle"}) + "ログアウト", :controller => "login", :action => "logout" %></li>
+<% else %>
+<li><%= link_to image_tag("openid.gif", {:style => "border: none; vertical-align: middle"}) + "ログイン", "#login_form", {:class => "lightwindow"} %></li>
+<% end %>
+</ul>
+</div>
+
+<div id="tabs" class="flora">
+<ul>
+<li><%= link_to "<span>クイズを探す</span>", :controller => "quizzes", :action => "index" %></li>
+<li><%= link_to "<span>投稿する</span>", :controller => "quizzes", :action => "new" %></li>
+<% if session[:user] %>
+<li><%= link_to "<span>マイページ</span>", session[:user] %></li>
+<li><%= link_to "<span>ログアウト</span>", :controller => "login", :action => "logout" %></li>
+<% else %>
+<li><%= link_to "<span>ログイン</span>", "#login_form", {:class => "lightwindow"} %></li>
+<% end %>
+</ul>
+</div>
+
 </div>
 
 <p style="color: green"><%= flash[:notice] %></p>
 <div id="colmask">
-<div id="colmid">
-<div id="colright">
-<div id="col1wrap">
-<div id="col1pad">
-<div id="col1">
-<%= yield  %>
+<div>
+<%= yield %>
+<div><%= @content_for_left %></div>
+
+<div><%= @content_for_right %></div>
+
 </div>
 </div>
+
+<div id="footer">
+<p>ここどこ © 2008 Kuoka, Yusuke All Right Reserved.</p>
 </div>
-</div>
-</div>
-</div>
+
 </body>
 <% end %>
-
 
 </html>
 

@@ -15,26 +15,27 @@
 </style>
 
   <script type="text/javascript">
-    function load() {
-      if (GBrowserIsCompatible()) {
-        Event.observe(window, "load", load, false);
-        Event.observe(window, "unload", GUnload, false);
+    Event.observe(window, "load", load, false);
+    Event.observe(window, "unload", GUnload, false);
 
-        var map = new GMap2(document.getElementById("map"));
+    function load() {
+      if (GBrowserIsCompatible() && document.getElementById("map")) {
+        var map = new GMap2($("map"));
         map.addControl(new google.maps.LocalSearch());
         map.enableScrollWheelZoom();
-        map.addControl(new GLargeMapControl()); // ズームコントロール。Small で小型に
-        map.addControl(new GMapTypeControl()); // 地図タイプ切り替え。Control(true)で小型に
-        show_x = document.getElementById("show_x");
-        show_y = document.getElementById("show_y");
-        show_title = document.getElementById("show_title");
+        map.enableContinuousZoom();
+    // ズームコントロール。Small で小型に
+        map.addControl(new GLargeMapControl()); 
+    // 地図タイプ切り替え。Control(true)で小型に
+        map.addControl(new GMapTypeControl()); 
+        var show_x = $("show_x");
+        var show_y = $("show_y");
+        var show_title = $("show_title");
         GEvent.addListener(map, 'click', function(overlay, latlng) {
           if  (latlng) {
-            document.getElementById("mark_lat").value = latlng.lat();
-            document.getElementById("mark_lng").value = latlng.lng();
+            $("mark_lat").value = latlng.lat();
+            $("mark_lng").value = latlng.lng();
           }
-              
-//            map.openInfoWindowHtml(latlng, "<b>test</b>")
         });
         GEvent.addListener(map, 'addoverlay', function(overlay) {
           GEvent.addListener(overlay, 'click', function(m, latlng) {
@@ -42,16 +43,14 @@
             show_x.innerHTML = m.valueOf();
           });
         });
-        <% if edit_map %>
-	<%= "map.setCenter(new GLatLng(#{edit_map.lat},#{edit_map.lng}),16);" %>
+        <% if @mark %>
+	<%= "map.setCenter(new GLatLng(#{@mark.lat},#{@mark.lng}),16);" %>
 	<% else %>
 	map.setCenter(new GLatLng(35.61975622603792,139.72841262817383),16);
 	<% end %>
-        //map.setCenter(new GLatLng(37.4419, -122.1419), 13);
-        //map.setCenter(new GPoint(139.713134765625,35.69299463209881), 13);
-
-
       }
     }
   </script>
 <% end %>
+
+<%= yield %>

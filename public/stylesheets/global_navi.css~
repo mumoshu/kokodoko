@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/*-----------------------------
+	Global Navigation
+-------------------------------*/
+
+ul#globalNavi {
+	margin: 0;
+	padding: 0;
+	width: 100;/*800px;*/ /* 必ずwidthの設定をしてください */
+	background-color: /*#e3e8eb;*/#eee;
+}
+
+ul#globalNavi:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+ul#globalNavi li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 150px; /* ボタンの幅 def:120*/
+	line-height: 1;
+	list-style-type: none;
+}
+
+ul#globalNavi li a {
+	padding: 0.6em 10px; /* ボタンの厚みはここで調整 */
+	display: block;
+	position: relative;/* IE6でマウス反応領域がおかしいのをFix */
+	font-size: 12px;
+	color: #333;
+	text-align: center;
+	text-decoration: none;
+	background-color: #eee;
+}
+
+ul#globalNavi li a:hover {
+	color: #000;
+	background-color: #ddd;
+}

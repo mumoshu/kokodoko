@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 class MarksController < ApplicationController
+  nested_layout
   before_filter :set_up
-  
+  before_filter :authorize  
 
   # GET /marks
   # GET /marks.xml
@@ -29,10 +30,14 @@ class MarksController < ApplicationController
   # GET /marks/new.xml
   def new
     @mark = Mark.new
-    last = @quiz.marks.find(:last)
-    @mark.quiz_id = last.quiz_id
-    @mark.lat = last.lat
-    @mark.lng = last.lng
+    if last = @quiz.marks.find(:last)
+      @mark.quiz_id = last.quiz_id
+      @mark.lat = last.lat
+      @mark.lng = last.lng
+    else
+      @mark.lat = 35.61975622603792
+      @mark.lng = 139.72841262817383
+    end
 
     respond_to do |format|
       format.html # new.html.erb

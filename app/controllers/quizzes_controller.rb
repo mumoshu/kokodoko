@@ -19,7 +19,7 @@ class QuizzesController < ApplicationController
   # GET /quizzes/1.xml
   def show
     @quiz = Quiz.find(params[:id])
-    @marks = @quiz.marks.shuffle
+    @marks = @quiz.marks
     @quiz.num_accesses += 1;
     @quiz.save
 

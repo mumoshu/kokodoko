@@ -32,9 +32,7 @@
   </p>
 <% end %>
 
-<% content_for :right do %>
 <%= render_component :controller => "marks", :action => "index", :params => {:quiz_id => @quiz.id} %>
-<% end %>
-
+e
 <%= link_to 'Show', @quiz %> |
 <%= link_to 'Back', quizzes_path %>
