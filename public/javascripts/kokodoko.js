@@ -135,26 +135,60 @@ var score = {
 };
 
 //クイズ進行制御
-var quiz = {
-    current_count: 0, //出題番号
-    current_question: null, //現在の問題
+function Quiz(questions, opts) {
+    this.questions = questions;
+    for(var key in opts) {
+	if(opts[key]) {
+	    this[key] = opts[key];
+	}
+    }
+};
+
+Quiz.prototype = {
+    question_index: 0, //出題番号
     questions: null, //問題集
     num_questions: null, //出題数。必ずしもthis.questions.lengthと同じではない
-    view_type: null, // "satellite" or "street"
+
+    test: function(answer) {
+	return this._get_current_question().title == answer;
+    },
+    get_current_question: function() {
+	return get_nth_question(this.question_index);
+    },
+    next: function() {
+	this.question_index ++;
+    },
+    get_num_rest: function() {
+	return this.num_questions - (this.question_index + 1);
+    },
+    _get_nth_question: function(index) {
+	if(this.question_index < this.num_quesions) {
+	    return this.questions[index % this.questions.length];
+	}
+	return null;
+    }
+};
+
+// class: MapController
+function MapController() {
+
+};
+
+MapController.prototype = {
     show_message: function(str) {
-        window.alert(str);
+	window.alert(str);
     },
     message: function(id,msg) {
 	document.getElementById(id).innerHTML = msg;
     },
     magnify: function() {
 	score.magnified = true;
-	this.point.innerHTML = score.get_point();
+	$("point").innerHTML = score.get_point();
 	map.setZoom(this.current_question.scale.magnify);
     },
     demagnify: function() {
 	score.demagnified = true;
-	this.point.innerHTML = score.get_point();
+	$("point").innerHTML = score.get_point();
 	map.setZoom(this.current_question.scale.demagnify);
     },
     normal_scale: function() {
@@ -174,17 +208,16 @@ var quiz = {
 	}
     },
     give_up: function() {
-	this.ansmap.style.display = "block";
+	$("ansmap").show();
 	window.alert(this.current_question.title + " でした。");
 	this.next_question();
-	this.ansmap.style.display = "none";
+	$("ansmap").hide();
     },
     next_question: function() {
-	this.hide_hint();
+	$("hint").hide();
 	map.removeOverlay(street);
 
-	num_rest = this.num_questions - this.current_count;
-	this.q_rest.innerHTML = "残り " + num_rest;
+	$("q_rest").innerHTML = "残り " + this.quiz.get_num_rest();
 
 	score.reset();
 	this.current_question = this.questions[(this.current_count++) % this.questions.length];
@@ -200,14 +233,11 @@ var quiz = {
     },
     finish: function() {
 	window.alert("finish!");
-	document.getElementById("score_score").value = score.total
-	document.getElementById("score_submit").click()
-    },
-    hide_hint: function() {
-	this.hint.style.display = "none";
+	$("score_score").value = score.total;
+	$("score_submit").click();
     },
     show_hint: function() {
-	this.hint.style.display = "block";
+	$("hint").show();
 	set_hint_latlng(this.current_question.latlng);
 	map.addOverlay(street);
     }

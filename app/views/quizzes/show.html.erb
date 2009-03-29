@@ -14,9 +14,9 @@
   </style>
 
   <%= javascript_include_tag "kokodoko" %>
-
-  <script type="text/javascript">
+  <script>
     var ary = new Array();
+
     <% for m in @marks.entries %>
     ary.push({
       title: "<%= m.title %>",
@@ -24,52 +24,15 @@
       scale: { magnify: <%= m.magnify_scale || @quiz.magnify_scale %>, normal: 16, demagnify: 15 }
     });
     <% end %>
+
     shuffle(ary);
 
-    quiz.questions = ary;
-    quiz.num_questions = <%= @quiz.num_questions %>;
-    quiz.view_type = "<%= @quiz.view_type %>";
+    var num  = <%= @quiz.num_questions %>;
+    var view = "<%= @quiz.view_type %>";
 
-    Event.observe(window, 'load', function() {
-//    jQuery("pbar").progressbar({
-//      interval: 2000
-//    });
-//    jQuery("pbar").progressbar("start");
-
-      var modal = Control.Modal.open($('modal_content'),{
-        closeOnClick: 'overlay',
-        overlayOpacity: 0.75,
-        fade: true
-      });
-    var afterClose = function() {
-      new PeriodicalExecuter(function() {
-          pbar2.setPercentage('+1%');
-        },
-        0.5
-      );
-    };
-    modal.observe('afterClose', afterClose);
-    
-      pbar2 = new JS_BRAMUS.jsProgressBar($('progress_bar2'), 0, {
-        animate: true,
-        showText: false,
-        boxImage: '/kokodoko/images/bramus/percentImage.png',
-        barImage: Array('/kokodoko/images/bramus/percentImage_back1.png',
-          '/kokodoko/images/bramus/percentImage_back2.png',
-          '/kokodoko/images/bramus/percentImage_back3.png',
-          '/kokodoko/images/bramus/percentImage_back4.png'
-        ),
-        onTick: function(pbObj) {
-          if (pbObj.getPercentage() == 100) {
-            window.alert("time up!");
-            $('new_score').submit();
-          };
-          return true;
-        }
-      });
-
-    });
+    quiz = new Quiz(ary, {num_questions: num, view_type: view});
   </script>
+  <%= javascript_include_tag "kokodoko_play.js" %>
 <% end %>
 
 <div class="percentImage1" id="progress_bar2">[ Loading Progress Bar ]</div>
