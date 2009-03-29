@@ -1,3 +1,0 @@
-module QuizzesHelper
-  include ApplicationHelper
-end
