@@ -15,22 +15,32 @@
 
   <%= javascript_include_tag "kokodoko" %>
   <script>
-    var ary = new Array();
+    Event.observe(window, "load", function() {
+      var ary = new Array();
 
-    <% for m in @marks.entries %>
-    ary.push({
-      title: "<%= m.title %>",
-      latlng: new GLatLng(<%= m.lat %>,<%= m.lng %>),
-      scale: { magnify: <%= m.magnify_scale || @quiz.magnify_scale %>, normal: 16, demagnify: 15 }
+      <% for m in @marks.entries %>
+      ary.push({
+        title: "<%= m.title %>",
+        latlng: new GLatLng(<%= m.lat %>,<%= m.lng %>),
+        scale: { magnify: <%= m.magnify_scale || @quiz.magnify_scale %>, normal: 16, demagnify: 15 }
+      });
+      <% end %>
+
+      shuffle(ary);
+      console.log(map);
+
+      quiz = new QuizController(
+        new Quiz(
+          ary,
+          {
+            num_questions: <%= @quiz.num_questions %>,
+            view_type: "<%= @quiz.view_type %>"
+          }
+          ),
+          map
+          );
+                  map.setCenter(quiz.quiz.get_current_question().latlng, 16);
     });
-    <% end %>
-
-    shuffle(ary);
-
-    var num  = <%= @quiz.num_questions %>;
-    var view = "<%= @quiz.view_type %>";
-
-    quiz = new Quiz(ary, {num_questions: num, view_type: view});
   </script>
   <%= javascript_include_tag "kokodoko_play.js" %>
 <% end %>
@@ -42,32 +52,24 @@
 </div>
 
   <div id="quiz">
-      <div id="pano" style="width: 500px; height: 300px"></div>
       <div id="map" style="width: 800px; height: 600px"></div>
-      <div id="ansmap" style="width: 500px; height: 300px"></div>
-      <div id="hint" style="width: 500px; height: 300px"></div>
   </div>
   <input id="answer" type="text" onfocus="this.select()"></input>
-  <input type="button" onclick="quiz.test()" value="答え合わせ"></input>
-  <% if @quiz.view_type == "satellite" %>
-  <input type="button" onclick="quiz.demagnify()" value="広域"></input>
-  <input type="button" onclick="quiz.normal_scale()" value="通常"></input>
-  <input type="button" onclick="quiz.magnify()" value="詳細"></input>
-  <input type="button" onclick="quiz.show_hint()" value="ヒント"></input>
-  <% end %>
-  <input type="button" onclick="quiz.give_up()" value="ギブアップ"></input>
+  <input id="test_button" type="button" onclick="quiz.test()" value="答え合わせ"></input>
+  <input id="next_button" type="button" onclick="quiz.next()" value="次へ"></input>
+  <input id="finish_button" type="button" onclick="quiz.finish()" value="終了"></input>
   <br/>
-  <div id="point"></div>
   <div id="total"></div>
   <div id="message"></div>
   <div id="rate"></div>
   <div id="q_rest"></div>
+
   <% @score = Score.new; @score.user = session[:user_id]; @score.quiz = @quiz %>
   <div style="display:none">
-  <% form_for @score do |f| %>
-  <%= f.text_field :score %>
-  <%= f.text_field :user_id %>
-  <%= f.text_field :quiz_id %>
-  <%= f.submit "Send" %>
-  <% end %>
+    <% form_for @score do |f| %>
+    <%= f.text_field :score %>
+    <%= f.text_field :user_id %>
+    <%= f.text_field :quiz_id %>
+    <%= f.submit "Send" %>
+    <% end %>
   </div>

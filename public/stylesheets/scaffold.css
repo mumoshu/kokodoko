@@ -59,3 +59,8 @@ a:hover { color: #fff; background-color:#000; }
   color: #000;
   padding-left: 18px;
 }
+
+input {
+    font-size: 30px;
+}
+

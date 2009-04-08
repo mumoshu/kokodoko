@@ -11,6 +11,6 @@ module ApplicationHelper
       @key = "ABQIAAAAFWWhd6xu7eDT15nkp1sQQxQ2ZspTbS5XvquBQmPB_A0jTVxSphTj4\
 c2GeTMxKQOZQ-0bRpDwUaiQaQ"
     end
-    "<script src=\"http://maps.google.co.jp/maps?file=api&amp;v=2&amp;key=#{@key}\" type=\"text/javascript\"></script>"
+    %|<script src="http://maps.google.co.jp/maps?file=api&amp;v=2&amp;key=#{@key}" type="text/javascript"></script>|
   end
 end
