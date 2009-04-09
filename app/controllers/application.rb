@@ -26,6 +26,7 @@ class ApplicationController < ActionController::Base
   alias old_guard_from_nested_layouts guard_from_nested_layouts
   
   def guard_from_nested_layouts
+    return true if request.request_uri =~ /\.xml$/
     old_guard_from_nested_layouts or parent_controller
   end
 end
