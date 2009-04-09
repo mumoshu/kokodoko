@@ -35,24 +35,23 @@
   </script>
 <% end %>
 
-<div class="percentImage1" id="progress_bar2">[ Loading Progress Bar ]</div>
-
 <div id="modal_content">
 <em>Click to Start</em>
 </div>
 
+  <div id="progress_bar">TIME</div>
+  <div id="total">0</div>
+
   <div id="quiz">
-      <div id="map" style="width: 800px; height: 600px"></div>
+      <div id="map"></div>
   </div>
+  
+  <div class="gamepanel">
   <input id="answer" type="text" onfocus="this.select()"></input>
   <input id="test_button" type="button" onclick="quiz.test()" value="答え合わせ"></input>
   <input id="next_button" type="button" onclick="quiz.next()" value="次へ"></input>
   <input id="finish_button" type="button" onclick="quiz.finish()" value="終了"></input>
-  <br/>
-  <div id="total"></div>
-  <div id="message"></div>
-  <div id="rate"></div>
-  <div id="q_rest"></div>
+  </div>
 
   <% @score = Score.new; @score.user = session[:user_id]; @score.quiz = @quiz %>
   <div style="display:none">

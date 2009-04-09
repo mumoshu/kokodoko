@@ -1,6 +1,7 @@
 var map;
 var spot_marker;
 var timer;
+var progress_bar;
 
 Event.observe(window, "load", function() {
     $("next_button").hide();
@@ -22,38 +23,30 @@ Event.observe(window, "load", function() {
         map.addOverlay(spot_marker);
 
         // setup progressbar
-        pbar2 = new JS_BRAMUS.jsProgressBar($('progress_bar2'), 0, {
-            animate: true,
-            showText: false,
-            boxImage: '/images/bramus/percentImage.png',
-            barImage: Array('/images/bramus/percentImage_back1.png',
-                '/images/bramus/percentImage_back2.png',
-                '/images/bramus/percentImage_back3.png',
-                '/images/bramus/percentImage_back4.png'
-                   ),
-            onTick: function(pbObj) {
-                if (pbObj.getPercentage() == 100) {
-                    quiz.timeover();
-                };
-                return true;
-            }
+        progress_bar = new Control.ProgressBar('progress_bar',{
+            interval: 0
         });
+
 
         // click to start!
         var modal = Control.Modal.open($('modal_content'),{
             closeOnClick: 'overlay',
             overlayOpacity: 0.75,
             width: 300,
-            //fade: true
+            fade: true
         });
 
         modal.observe('afterClose',
               function() {
                   timer = new PeriodicalExecuter(
                       function() {
-                          pbar2.setPercentage('+1%');
+                          progress_bar.step(1);
+                          if(progress_bar.progress == 100) {
+                              timer.stop();
+                              quiz.timeover();
+                          }
                       },
-                      30.0 / 100
+                      (30.0 / 100)
                   );
               });
     } //if(GBrowserIsCompatible())

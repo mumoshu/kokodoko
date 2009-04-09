@@ -1,4 +1,29 @@
-body { background-color: #fff; color: #333; }
+body {
+    width: 800px;
+    margin: 0em auto;
+    background-color: #fff;
+    color: #333;
+}
+
+#title {
+height: 70px;
+font-size: 500%;
+font-weight: bold;
+line-height: 70px;
+}
+
+#subtitle {
+height: 34px;
+font-size: 80%;
+color:#666;
+float: left;
+}
+
+#header {
+}
+#navi {
+float: right;
+}
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -65,7 +90,45 @@ input {
 }
 
 #map {
+  margin: 5px;
   border : 1px solid #979797;
   width : 100%;
-  height : 575px;
+  height : 480px;
 }
+
+#progress_bar {
+    position: relative;
+    float: left;
+    margin: 10px 0px 0px 250px;
+    z-index: 1
+}
+
+#total {
+    position: relative;
+    background-color: white;
+    top: 20px;
+    left: 90px;
+    float: left;
+    margin: 0px 0px 10px 10px;
+    font-size: 50px;
+    line-height: 60px;
+    z-index: 1
+}
+
+.gamepanel #answer #test_button {
+    margin: 0px 0px 10px 10px;
+}
+
+.gamepanel #next_button {
+    margin: 0px 10px 10px 10px;
+}
+
+.gamepanel #finish_button {
+    margin: 0px 10px 10px 100px;
+}
+
+.gamepanel {
+    padding-left: 200px;
+    width: 100%;
+}
+

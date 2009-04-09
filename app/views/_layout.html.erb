@@ -15,14 +15,15 @@
   <%= javascript_include_tag :defaults %>
   <%= javascript_include_tag 'scriptaculos', 'slider', 'resizable', :cache => true%>
   <%= javascript_include_tag 'lightwindow' %>
-  <%= javascript_include_tag 'livepipe/livepipe', 'livepipe/window', :cache => true %>
+  <%= javascript_include_tag 'livepipe/livepipe', 'livepipe/window', 'livepipe/progressbar', :cache => true %>
   <%= javascript_include_tag 'jsProgressBarHandler.js' %>
-  <%= stylesheet_link_tag 'scaffold' %>
+
   <%= stylesheet_link_tag 'holy-grail-no-quirks-mode' %>
   <%= stylesheet_link_tag 'navi_right' %>
   <%= stylesheet_link_tag 'livepipe/window', 'livepipe/progressbar', :cache => true %>
   <%= stylesheet_link_tag 'lightwindow' %>
   <%= stylesheet_link_tag '2-class.css' %>
+  <%= stylesheet_link_tag 'scaffold' %>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.2/jquery-ui.min.js"></script>
   <%= javascript_include_tag 'jquery.navi.js' %>
@@ -33,29 +34,6 @@
 
   <%= javascript_include_tag 'jquery.horizontal_menu_with_separators.js' %>
   <%= stylesheet_link_tag 'horizontal_menu_with_separators' %>
-
-
-<style type="text/css">
-  body {
-    width: 800px;
-    margin: 0em auto;
-  }
-  #title {
-    font-size: 200%;
-    font-weight: bold;
-  }
-  #subtitle {
-    height: 34px;
-    font-size: 80%;
-    color:#666;
-    float: left;
-  }
-  #header {
-  }
-  #navi {
-    float: right;
-  }
-</style>
 
   <script>
     jQuery.noConflict();
